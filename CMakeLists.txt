@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 2.8)
+project (actuate)
+add_subdirectory(motorlib)
+add_executable (actuate main.cpp)
+target_link_libraries(actuate PUBLIC motorlib)

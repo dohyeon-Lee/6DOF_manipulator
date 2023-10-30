@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/actuate.dir/main.cpp.o  -o actuate motorlib/libmotorlib.a 
