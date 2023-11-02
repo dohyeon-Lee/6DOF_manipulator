@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/actuate.dir/main.cpp.o"
+  "CMakeFiles/actuate.dir/Robotics.cpp.o"
   "actuate.pdb"
   "actuate"
 )

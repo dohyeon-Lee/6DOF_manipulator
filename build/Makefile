@@ -136,6 +136,33 @@ motorlib/fast:
 	$(MAKE) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/build
 .PHONY : motorlib/fast
 
+Robotics.o: Robotics.cpp.o
+
+.PHONY : Robotics.o
+
+# target to build an object file
+Robotics.cpp.o:
+	$(MAKE) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/Robotics.cpp.o
+.PHONY : Robotics.cpp.o
+
+Robotics.i: Robotics.cpp.i
+
+.PHONY : Robotics.i
+
+# target to preprocess a source file
+Robotics.cpp.i:
+	$(MAKE) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/Robotics.cpp.i
+.PHONY : Robotics.cpp.i
+
+Robotics.s: Robotics.cpp.s
+
+.PHONY : Robotics.s
+
+# target to generate assembly for a file
+Robotics.cpp.s:
+	$(MAKE) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/Robotics.cpp.s
+.PHONY : Robotics.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -173,6 +200,9 @@ help:
 	@echo "... actuate"
 	@echo "... edit_cache"
 	@echo "... motorlib"
+	@echo "... Robotics.o"
+	@echo "... Robotics.i"
+	@echo "... Robotics.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -102,6 +102,22 @@ port_handler.h
 stdint.h
 -
 
+/home/dunguru/dynamixel_control/Robotics.cpp
+Robotics.h
+/home/dunguru/dynamixel_control/Robotics.h
+
+/home/dunguru/dynamixel_control/Robotics.h
+cmath
+-
+eigen3/Eigen/Core
+-
+eigen3/Eigen/Dense
+-
+eigen3/Eigen/Eigen
+-
+eigen3/Eigen/Cholesky
+-
+
 /home/dunguru/dynamixel_control/main.cpp
 fcntl.h
 -
@@ -125,4 +141,12 @@ Motor.h
 /home/dunguru/dynamixel_control/Motor.h
 Motor_control.h
 /home/dunguru/dynamixel_control/Motor_control.h
+iostream
+-
+iomanip
+-
+cmath
+-
+Robotics.h
+/home/dunguru/dynamixel_control/Robotics.h
 
