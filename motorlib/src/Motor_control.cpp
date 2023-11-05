@@ -14,7 +14,10 @@ int Motor_control::angle(double angle_)
 {
     return int(fmap(angle_, -M_PI, M_PI, DXL_MINIMUM_POSITION_VALUE, DXL_MAXIMUM_POSITION_VALUE));
 };
-
+double Motor_control::inv_angle(double data)
+{
+    return fmap(data, DXL_MINIMUM_POSITION_VALUE, DXL_MAXIMUM_POSITION_VALUE, -M_PI, M_PI);
+}
 int Motor_control::velocity(double rad_per_sec)
 {
     double rpm = rad_per_sec * 9.5492968;
@@ -75,8 +78,54 @@ void Motor_control::setMode(dynamixel::PortHandler *portHandler, dynamixel::Pack
     torque_on(portHandler, packetHandler);
 };
 
+// void Motor_control::getPosition(dynamixel::GroupFastSyncRead groupFastSyncRead)
+// {
+//     int dxl_comm_result = COMM_TX_FAIL;               // Communication result
+//     bool dxl_addparam_result = false;                 // addParam result
+//     bool dxl_getdata_result = false;                  // GetParam result
+
+//     for(int i = 0; i < motor.size(); i++)
+//     {
+//         dxl_addparam_result = groupFastSyncRead.addParam(motor[i].getID());
+//         if (dxl_addparam_result != true)
+//         {
+//             fprintf(stderr, "[ID:%03d] groupSyncWrite addparam failed", motor[i].getID());
+//         }
+//     }
+//     dxl_comm_result = groupFastSyncRead.txRxPacket();
+//     if (dxl_comm_result != COMM_SUCCESS)
+//         printf("fail");
+
+//     for(int i = 0; i < motor.size(); i++)
+//         motor[i].measured_pos = inv_angle(groupFastSyncRead.getData(motor[i].getID(), ADDR_MX_PRESENT_POSITION, LEN_MX_PRESENT_POSITION));
+// }
+
+void Motor_control::getPosition(dynamixel::GroupSyncRead groupSyncRead)
+{
+    int dxl_comm_result = COMM_TX_FAIL;               // Communication result
+    bool dxl_addparam_result = false;                 // addParam result
+    bool dxl_getdata_result = false;                  // GetParam result
+
+    for(int i = 0; i < motor.size(); i++)
+    {
+        dxl_addparam_result = groupSyncRead.addParam(motor[i].getID());
+        if (dxl_addparam_result != true)
+        {
+            fprintf(stderr, "[ID:%03d] groupSyncWrite addparam failed", motor[i].getID());
+        }
+    }
+    dxl_comm_result = groupSyncRead.txRxPacket();
+    if (dxl_comm_result != COMM_SUCCESS)
+        printf("fail");
+
+    for(int i = 0; i < motor.size(); i++)
+        motor[i].measured_pos = inv_angle(groupSyncRead.getData(motor[i].getID(), ADDR_MX_PRESENT_POSITION, LEN_MX_PRESENT_POSITION));
+}
+
+
 void Motor_control::setPosition(dynamixel::GroupSyncWrite groupSyncWrite) //points->point
-{                      
+{  
+                        
     for(int i = 0; i < motor.size(); i++)
     {
         uint32_t input_position = angle(motor[i].pos);

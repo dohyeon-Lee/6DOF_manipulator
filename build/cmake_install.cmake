@@ -1,4 +1,4 @@
-# Install script for directory: /home/dunguru/dynamixel_control
+# Install script for directory: /home/dohyeon/2023_UGRP_actuating_code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,9 +37,14 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dunguru/dynamixel_control/build/motorlib/cmake_install.cmake")
+  include("/home/dohyeon/2023_UGRP_actuating_code/build/motorlib/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dunguru/dynamixel_control/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dohyeon/2023_UGRP_actuating_code/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

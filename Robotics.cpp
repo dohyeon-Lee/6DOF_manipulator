@@ -1,11 +1,71 @@
 #include "Robotics.h"
 
+MatrixXf getBlist()
+{
+    double h1 = 0.0515;
+    double h2 = 0.19707;
+    double h3 = 0.02999;
+    double h4 = 0.0155;
+    double w1 = 0.02993;
+    double w2 = 0.0915;
+    double w3 = 0.0515;
+    double w4 = 0.0845;
+
+    VectorXf B1(6);
+    VectorXf B2(6);
+    VectorXf B3(6);
+    VectorXf B4(6);
+    VectorXf B5(6);
+    VectorXf B6(6);
+    B1 << 0, 1, 0, (w1+w2+w3+w4), 0, 0;
+    B2 << -1, 0, 0, 0, (w1+w2+w3+w4), -(h2+h3+h4);
+    B3 << -1, 0, 0, 0, (w1+w2+w3+w4), -(h4+h4);
+    B4 << 0, 0, 1, -h4, 0, 0;
+    B5 << -1, 0, 0, 0, w4, -h4;
+    B6 << 0, 0, 1, 0, 0, 0;
+
+    MatrixXf Blist(6,6);
+    Blist << B1, B2, B3, B4, B5, B6;
+    return Blist;
+}
+
+MatrixXf getM()
+{
+    double h1 = 0.0515;
+    double h2 = 0.19707;
+    double h3 = 0.02999;
+    double h4 = 0.0155;
+    double w1 = 0.02993;
+    double w2 = 0.0915;
+    double w3 = 0.0515;
+    double w4 = 0.0845;
+
+    MatrixXf M(4,4);
+    M <<    0, 0, 1, w1+w2+w3+w4,
+            1, 0, 0, 0,
+            0, 1, 0, h1+h2+h3+h4,
+            0, 0, 0, 1;
+    return M;
+}
+
 bool Nearzero(float value){
     if(value<0.000001)
         return true;
     else
         return false;
 }
+
+bool iszero(MatrixXf T) {
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (abs(T(i, j)) > 0.000001) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
 
 MatrixXf MatrixExp3(MatrixXf so3mat){
     MatrixXf R(3, 3);
@@ -85,6 +145,35 @@ MatrixXf MatrixLog3(MatrixXf R){
     }
     return so3mat;
 }
+
+MatrixXf MatrixLog6(MatrixXf T) {
+    MatrixXf R(3, 3);
+    MatrixXf EYE(3, 3);
+    MatrixXf ZERO(3, 3);
+    EYE << 1, 0, 0, 0, 1, 0, 0, 0, 1;
+    MatrixXf expmat(4,4);
+    R = T.block<3, 3>(0, 0);
+    MatrixXf omgmat = MatrixLog3(R);
+    if (iszero(omgmat)) {
+        expmat <<
+            0, 0, 0, T(0, 3),
+            0, 0, 0, T(1, 3),
+            0, 0, 0, T(2, 3),
+            0, 0, 0, 0;
+    }
+    else {
+        float theta = acos((R.trace() - 1) / 2);
+        expmat.block<3, 3>(0, 0) = omgmat;
+        expmat.block<3, 1>(0, 3) = (EYE - omgmat / 2 + (1 / theta - 1/tan(theta / 2) / 2) * omgmat * omgmat / theta) * T.block<3, 1>(0, 3);
+        expmat.block<1, 4>(3, 0) << 0, 0, 0, 0;
+    }
+
+    return expmat;
+
+
+}
+
+
 
 MatrixXf Adjoint(MatrixXf T){
     MatrixXf R(3, 3);

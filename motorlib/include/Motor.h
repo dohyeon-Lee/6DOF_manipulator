@@ -11,10 +11,13 @@ class Motor
     double vel = 0; //rad/s
     double torque = 0; // NM
     double inital_pos;
+    double measured_pos = 0;
     private:
     int id = 1;
     double Min_angle;
     double Max_angle;
+    
+    
     
 };
 #endif

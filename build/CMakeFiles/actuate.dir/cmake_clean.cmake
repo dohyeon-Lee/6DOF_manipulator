@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/actuate.dir/main.cpp.o"
   "CMakeFiles/actuate.dir/Robotics.cpp.o"
-  "actuate.pdb"
+  "CMakeFiles/actuate.dir/Robotics.cpp.o.d"
+  "CMakeFiles/actuate.dir/main.cpp.o"
+  "CMakeFiles/actuate.dir/main.cpp.o.d"
   "actuate"
+  "actuate.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

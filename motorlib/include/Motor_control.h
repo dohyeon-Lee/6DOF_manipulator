@@ -58,11 +58,14 @@ class Motor_control
         Motor_control(vector<Motor> motor_);
         double fmap(double x, double in_min, double in_max, double out_min, double out_max);
         int angle(double angle_); // radian to control range
+        double inv_angle(double data);
         int velocity(double rad_per_sec); // rad/s to control range
         int torque(double Nm);
         void torque_off(dynamixel::PortHandler *portHandler, dynamixel::PacketHandler *packetHandler);
         void torque_on(dynamixel::PortHandler *portHandler, dynamixel::PacketHandler *packetHandler);
         void setMode(dynamixel::PortHandler *portHandler, dynamixel::PacketHandler *packetHandler, uint8_t mode);
+        // void getPosition(dynamixel::GroupFastSyncRead groupFastSyncRead);
+        void getPosition(dynamixel::GroupSyncRead groupSyncRead);
         void setPosition(dynamixel::GroupSyncWrite groupSyncWrite);
         void setVelocity(dynamixel::GroupSyncWrite groupSyncWrite);
         void setTorque(dynamixel::GroupSyncWrite groupSyncWrite);
