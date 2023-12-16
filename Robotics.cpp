@@ -113,9 +113,10 @@ MatrixXf MatrixLog3(MatrixXf R){
     float acosinput = (R.trace() - 1) / 2;
     MatrixXf so3mat(3, 3);
     if (acosinput >=1){
-        so3mat(0,0) = 1;
-        so3mat(1,1) = 1;
-        so3mat(2,2) = 1;
+        so3mat <<
+        0,0,0,
+        0,0,0,
+        0,0,0;
     }
     else if (acosinput <= -1){
         VectorXf omg(3);
