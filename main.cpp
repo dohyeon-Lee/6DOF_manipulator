@@ -108,9 +108,6 @@ int main()
   std::vector<MatrixXf> Xpoint;
   thetalist_start << 0,0,0,0,0,0;
   MatrixXf X_start = FKinBody(M, Blist, thetalist_start);
-  // thetalist_end << 0,-45,-20,0,45,0;
-  // thetalist_end *= (M_PI/180.);
-  // MatrixXf X_end = FKinBody(M, Blist, thetalist_end);
   
   MatrixXf X_end1(4,4);
   X_end1 << 0, 0, 1, 0.2,
@@ -120,48 +117,9 @@ int main()
 
   // MatrixXf X_end5 = FKinBody(M, Blist, thetalist_start);
   
-  // MatrixXf X_end2(4,4);
-  // X_end2 << 0, 0, 1, 0.2,
-            // 1, 0, 0, 0.0,
-            // 0, 1, 0, 0.3,
-            // 0, 0, 0, 1;
-  // 
-  // MatrixXf X_end3(4,4);
-  // X_end3 << 0, 0, 1, 0.3,
-            // 1, 0, 0, 0.0,
-            // 0, 1, 0, 0.3,
-            // 0, 0, 0, 1;
-  // 
-  // MatrixXf X_end4(4,4);
-  // X_end4 << 0, 0, 1, 0.1,
-            // 1, 0, 0, 0.0,
-            // 0, 1, 0, 0.3,
-            // 0, 0, 0, 1;
-            // 
-  // X_end4 <<  1, 0, 0, 0.2,
-            // 0, 1, 0, 0.0,
-            // 0, 0, 1, 0.4,
-            // 0, 0, 0, 1;
-
-  // MatrixXf X_end5(4,4);
-  // X_end5 <<  1, 0, 0, -0.2,
-  //           0, 1, 0, 0.0,
-  //           0, 0, 1, 0.4,
-  //           0, 0, 0, 1;
-
-  // MatrixXf X_end6(4,4);
-  // X_end6 <<  1, 0, 0, -0.0,
-  //           0, 1, 0, 0.0,
-  //           0, 0, 1, 0.4,
-  //           0, 0, 0, 1;
   Xpoint.push_back(X_start);
   Xpoint.push_back(X_end1);
-  // Xpoint.push_back(X_end2);
-  // Xpoint.push_back(X_end3);
-  // Xpoint.push_back(X_end4);
-  // Xpoint.push_back(X_end5);
-  // Xpoint.push_back(X_end6);
-
+  
   // control parameter
   double Kp = 0.8;
   double Ki = 0.01;
@@ -203,16 +161,6 @@ int main()
       now_thetalist(3) = actuate_motor.motor[3].measured_pos;
       now_thetalist(4) = actuate_motor.motor[4].measured_pos;
       now_thetalist(5) = actuate_motor.motor[5].measured_pos;
-
-      // now_thetalist = thetalist;
-
-      //actuate_motor.getPosition(groupSyncRead);
-      //std::cout << actuate_motor.motor[0].measured_pos << ", "
-      // << actuate_motor.motor[1].measured_pos << ", "
-      // << actuate_motor.motor[2].measured_pos << ", "
-      // << actuate_motor.motor[3].measured_pos << ", "
-      // << actuate_motor.motor[4].measured_pos << ", "
-      // << actuate_motor.motor[5].measured_pos << std::endl;
 
       MatrixXf X_sb = FKinBody(M,Blist,now_thetalist);
       MatrixXf R_sb = X_sb.block<3,3>(0,0);
@@ -268,18 +216,6 @@ int main()
 
       else
         std::cout << "to slow" << std::endl; 
-      // std::cout << sec.count() << std::endl; 
-      // if (i == n-1) // set velocity zero
-      // {
-      //   actuate_motor.motor[0].vel = 0;
-      //   actuate_motor.motor[1].vel = 0;
-      //   actuate_motor.motor[2].vel = 0;
-      //   actuate_motor.motor[3].vel = 0;
-      //   actuate_motor.motor[4].vel = 0;
-      //   actuate_motor.motor[5].vel = 0;
-      //   actuate_motor.setVelocity(groupSyncWrite);
-      //   std::cout<<"Moving End! "<<std::endl;
-      // }
       thetalist = now_thetalist;
     }
     thetalist_start = thetalist;
@@ -324,9 +260,6 @@ int main()
     VectorXf P_sb = X_sb.block<3,1>(0,3);
     MatrixXf Jb = JacobianBody(Blist, now_thetalist);
     
-    // VectorXf w_d(3);
-    // w_d << 0, 0, 0;
-    // VectorXf w_b = ((R_sb.transpose())*R_desired)*w_d;
     VectorXf P_desired_dot(3);
     VectorXf w_b(3);
     P_desired_dot << 0, label_velocity[i], 0;
