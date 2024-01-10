@@ -1,4 +1,4 @@
-# Install script for directory: /home/dohyeon/2023_UGRP_actuating_code
+# Install script for directory: /home/dohyeon/robot_arm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dohyeon/2023_UGRP_actuating_code/build/motorlib/cmake_install.cmake")
+  include("/home/dohyeon/robot_arm/build/motorlib/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dohyeon/2023_UGRP_actuating_code/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dohyeon/robot_arm/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

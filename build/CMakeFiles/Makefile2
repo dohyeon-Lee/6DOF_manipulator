@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dohyeon/2023_UGRP_actuating_code
+CMAKE_SOURCE_DIR = /home/dohyeon/robot_arm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dohyeon/2023_UGRP_actuating_code/build
+CMAKE_BINARY_DIR = /home/dohyeon/robot_arm/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -98,14 +98,14 @@ motorlib/clean: motorlib/CMakeFiles/motorlib.dir/clean
 CMakeFiles/actuate.dir/all: motorlib/CMakeFiles/motorlib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=1,2,3 "Built target actuate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dohyeon/robot_arm/build/CMakeFiles --progress-num=1,2,3 "Built target actuate"
 .PHONY : CMakeFiles/actuate.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/actuate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/robot_arm/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/actuate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/robot_arm/build/CMakeFiles 0
 .PHONY : CMakeFiles/actuate.dir/rule
 
 # Convenience name for target.
@@ -124,14 +124,14 @@ CMakeFiles/actuate.dir/clean:
 motorlib/CMakeFiles/motorlib.dir/all:
 	$(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/depend
 	$(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target motorlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dohyeon/robot_arm/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target motorlib"
 .PHONY : motorlib/CMakeFiles/motorlib.dir/all
 
 # Build rule for subdir invocation for target.
 motorlib/CMakeFiles/motorlib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/robot_arm/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motorlib/CMakeFiles/motorlib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/robot_arm/build/CMakeFiles 0
 .PHONY : motorlib/CMakeFiles/motorlib.dir/rule
 
 # Convenience name for target.

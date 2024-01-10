@@ -1,7 +1,7 @@
 motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.o: \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/Motor_control.cpp \
+ /home/dohyeon/robot_arm/motorlib/src/Motor_control.cpp \
  /usr/include/stdc-predef.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/Motor_control.h \
+ /home/dohyeon/robot_arm/motorlib/include/Motor_control.h \
  /usr/include/fcntl.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -136,14 +136,14 @@ motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/dynamixel_sdk.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_bulk_read.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/port_handler.h \
+ /home/dohyeon/robot_arm/motorlib/include/dynamixel_sdk.h \
+ /home/dohyeon/robot_arm/motorlib/include/group_bulk_read.h \
+ /home/dohyeon/robot_arm/motorlib/include/port_handler.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/packet_handler.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_handler.h \
+ /home/dohyeon/robot_arm/motorlib/include/packet_handler.h \
+ /home/dohyeon/robot_arm/motorlib/include/group_handler.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_function.h \
  /usr/include/c++/11/backward/binders.h \
@@ -155,12 +155,12 @@ motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.o: \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_bulk_write.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_sync_read.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_sync_write.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_fast_sync_read.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_fast_bulk_read.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/Motor.h \
+ /home/dohyeon/robot_arm/motorlib/include/group_bulk_write.h \
+ /home/dohyeon/robot_arm/motorlib/include/group_sync_read.h \
+ /home/dohyeon/robot_arm/motorlib/include/group_sync_write.h \
+ /home/dohyeon/robot_arm/motorlib/include/group_fast_sync_read.h \
+ /home/dohyeon/robot_arm/motorlib/include/group_fast_bulk_read.h \
+ /home/dohyeon/robot_arm/motorlib/include/Motor.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h /usr/include/c++/11/bits/postypes.h \

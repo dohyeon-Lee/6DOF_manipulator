@@ -1,9 +1,12 @@
+#define _USE_MATH_DEFINES
+#include <cmath>
+
+#include <memory>
 #include <fcntl.h>
 #include <termios.h>
 #define STDIN_FILENO 0
 #include <stdlib.h>
 #include <stdio.h>
-#include <cmath>
 #include <vector>
 #include "dynamixel_sdk.h"                                 
 #include <unistd.h> // usleep
@@ -14,7 +17,6 @@
 
 #include <iostream>
 #include <iomanip>
-#include <cmath>
 
 #include "Robotics.h"
 #include <chrono>
@@ -23,60 +25,29 @@
 
 using std::vector;
 using namespace std;
+using std::placeholders::_1;
+
+int sensor_mode = 0; 
+
+double accX;
+double angle; 
+
+
 // inital setting 
 // 1. sudo chmod a+rw /dev/ttyUSB0
 // 2. sudo gedit /sys/bus/usb-serial/devices/ttyUSB0/latency_timer and change 16 --> 1
 
-vector<double> readfile()
+
+int main(int argc, char * argv[])
 {
-  string filename = "/home/dohyeon/2023_UGRP_actuating_code/velocity_test.csv";
-  ifstream file(filename);
-  // if(!file.is_open())
-  // {
-  //   cout << "can't open file" << endl;
-  //   return 1;
-  // }
-  vector<double> label_velocity;
-  string line;
-  double value;
-  while(getline(file, line))
-  {
-    if(line.empty() || line.find_first_not_of(' ') == string::npos)
-    {
-      continue;
-    }
-    stringstream ss(line);
-    if (!(ss >> value))
-    {
-      cout << "wrong type" << endl;
-      continue;
-    }
-    label_velocity.push_back(value);
-  }
-  return label_velocity;
-}
-
-int main()
-{
-
-  vector<double> label_velocity = readfile();
-  for (const auto& val:label_velocity)
-  {
-    cout << val << endl;
-  }
-
   dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler(DEVICENAME);
   dynamixel::PacketHandler *packetHandler = dynamixel::PacketHandler::getPacketHandler(PROTOCOL_VERSION);
   uint16_t data_length = LEN_MX_GOAL_CURRENT + LEN_MX_GOAL_VELOCITY + 4 + 4 + LEN_MX_GOAL_POSITION;
   dynamixel::GroupSyncWrite groupSyncWrite(portHandler, packetHandler, ADDR_MX_GOAL_CURRENT, data_length); //vel,pos,torque 
   dynamixel::GroupSyncRead groupSyncRead(portHandler, packetHandler, ADDR_MX_PRESENT_POSITION, LEN_MX_PRESENT_POSITION);
-  // dynamixel::GroupFastSyncRead groupFastSyncRead(portHandler, packetHandler, ADDR_MX_PRESENT_POSITION, LEN_MX_PRESENT_POSITION);
-  // dynamixel::GroupSyncWrite groupSyncWrite(portHandler, packetHandler, ADDR_MX_GOAL_VELOCITY, LEN_MX_GOAL_VELOCITY);
   portHandler->openPort();
   portHandler->setBaudRate(BAUDRATE);
   vector<Motor> motor;
-
-  //여기까지 건들필요없음
 
   motor.push_back(Motor(1));
   motor.push_back(Motor(2));
@@ -86,18 +57,19 @@ int main()
   motor.push_back(Motor(6));
 
   Motor_control actuate_motor(motor);
- // position control 
-  actuate_motor.setMode(portHandler, packetHandler, POSITION_MODE);
+  
+  // position control 
+  // actuate_motor.setMode(portHandler, packetHandler, POSITION_MODE);
 
-  actuate_motor.motor[0].pos = 0;
-  actuate_motor.motor[1].pos = 0;
-  actuate_motor.motor[2].pos = 0;
-  actuate_motor.motor[3].pos = 0;
-  actuate_motor.motor[4].pos = 0;
-  actuate_motor.motor[5].pos = 0;
-  actuate_motor.setPosition(groupSyncWrite);
+  // actuate_motor.motor[0].pos = 0;
+  // actuate_motor.motor[1].pos = 0;
+  // actuate_motor.motor[2].pos = 0;
+  // actuate_motor.motor[3].pos = 0;
+  // actuate_motor.motor[4].pos = 0;
+  // actuate_motor.motor[5].pos = 0;
+  // actuate_motor.setPosition(groupSyncWrite);
 
-  usleep(5000000);
+  usleep(2000000);
 
   MatrixXf M = getM();
   MatrixXf Blist = getBlist();
@@ -106,67 +78,37 @@ int main()
   VectorXf thetalist_end(6);
 
   std::vector<MatrixXf> Xpoint;
+  
+  VectorXf now_thetalist_init(6);
+  actuate_motor.getPosition(groupSyncRead);
+  now_thetalist_init(0) = actuate_motor.motor[0].measured_pos;
+  now_thetalist_init(1) = actuate_motor.motor[1].measured_pos;
+  now_thetalist_init(2) = actuate_motor.motor[2].measured_pos;
+  now_thetalist_init(3) = actuate_motor.motor[3].measured_pos;
+  now_thetalist_init(4) = actuate_motor.motor[4].measured_pos;
+  now_thetalist_init(5) = actuate_motor.motor[5].measured_pos;
+  MatrixXf X_init = FKinBody(M,Blist,now_thetalist_init);
+
   thetalist_start << 0,0,0,0,0,0;
   MatrixXf X_start = FKinBody(M, Blist, thetalist_start);
-  // thetalist_end << 0,-45,-20,0,45,0;
-  // thetalist_end *= (M_PI/180.);
-  // MatrixXf X_end = FKinBody(M, Blist, thetalist_end);
   
   MatrixXf X_end1(4,4);
-  X_end1 << 0, 0, 1, 0.2,
+  X_end1 << 0, 0, 1, 0.17,
             1, 0, 0, 0.0,
             0, 1, 0, 0.1,
             0, 0, 0, 1;
 
-  // MatrixXf X_end5 = FKinBody(M, Blist, thetalist_start);
-  
-  // MatrixXf X_end2(4,4);
-  // X_end2 << 0, 0, 1, 0.2,
-            // 1, 0, 0, 0.0,
-            // 0, 1, 0, 0.3,
-            // 0, 0, 0, 1;
-  // 
-  // MatrixXf X_end3(4,4);
-  // X_end3 << 0, 0, 1, 0.3,
-            // 1, 0, 0, 0.0,
-            // 0, 1, 0, 0.3,
-            // 0, 0, 0, 1;
-  // 
-  // MatrixXf X_end4(4,4);
-  // X_end4 << 0, 0, 1, 0.1,
-            // 1, 0, 0, 0.0,
-            // 0, 1, 0, 0.3,
-            // 0, 0, 0, 1;
-            // 
-  // X_end4 <<  1, 0, 0, 0.2,
-            // 0, 1, 0, 0.0,
-            // 0, 0, 1, 0.4,
-            // 0, 0, 0, 1;
-
-  // MatrixXf X_end5(4,4);
-  // X_end5 <<  1, 0, 0, -0.2,
-  //           0, 1, 0, 0.0,
-  //           0, 0, 1, 0.4,
-  //           0, 0, 0, 1;
-
-  // MatrixXf X_end6(4,4);
-  // X_end6 <<  1, 0, 0, -0.0,
-  //           0, 1, 0, 0.0,
-  //           0, 0, 1, 0.4,
-  //           0, 0, 0, 1;
+  Xpoint.push_back(X_init);
   Xpoint.push_back(X_start);
   Xpoint.push_back(X_end1);
-  // Xpoint.push_back(X_end2);
-  // Xpoint.push_back(X_end3);
-  // Xpoint.push_back(X_end4);
-  // Xpoint.push_back(X_end5);
-  // Xpoint.push_back(X_end6);
 
+  double Duration = 1./50.; // The original value of the Duration was 0.06 !!
   // control parameter
   double Kp = 0.8;
   double Ki = 0.01;
+
   actuate_motor.setMode(portHandler, packetHandler, VELOCITY_MODE);
-  for (int j = 0; j < Xpoint.size()-1; j++)//
+  for (int j = 0; j < Xpoint.size()-1; j++)
   {
     std::cout<<"start moving to the desired position: " <<  j <<std::endl;
     
@@ -176,7 +118,6 @@ int main()
     MatrixXf P_end = Xpoint[j+1].block<3,1>(0,3);
 
     double t = 0;
-    double Duration = 0.02; // The original value of the Duration was 0.06 !!
     VectorXf thetalist = thetalist_start;
     VectorXf thetalist_dot(6);
     thetalist_dot << 0,0,0,0,0,0;
@@ -184,7 +125,7 @@ int main()
     MatrixXf before_P_desired = P_start + (P_end - P_start)*0;
 
     // actuate
-    int n = 100;
+    int n = 300;
     VectorXf Iterm(6);
     Iterm << 0,0,0,0,0,0;
     
@@ -203,16 +144,6 @@ int main()
       now_thetalist(3) = actuate_motor.motor[3].measured_pos;
       now_thetalist(4) = actuate_motor.motor[4].measured_pos;
       now_thetalist(5) = actuate_motor.motor[5].measured_pos;
-
-      // now_thetalist = thetalist;
-
-      //actuate_motor.getPosition(groupSyncRead);
-      //std::cout << actuate_motor.motor[0].measured_pos << ", "
-      // << actuate_motor.motor[1].measured_pos << ", "
-      // << actuate_motor.motor[2].measured_pos << ", "
-      // << actuate_motor.motor[3].measured_pos << ", "
-      // << actuate_motor.motor[4].measured_pos << ", "
-      // << actuate_motor.motor[5].measured_pos << std::endl;
 
       MatrixXf X_sb = FKinBody(M,Blist,now_thetalist);
       MatrixXf R_sb = X_sb.block<3,3>(0,0);
@@ -243,15 +174,6 @@ int main()
       before_P_desired = P_desired;
       before_R_desired = R_desired;
 
-      // actuate position
-      // actuate_motor.motor[0].pos = now_thetalist(0);
-      // actuate_motor.motor[1].pos = now_thetalist(1);
-      // actuate_motor.motor[2].pos = now_thetalist(2);
-      // actuate_motor.motor[3].pos = now_thetalist(3);
-      // actuate_motor.motor[4].pos = now_thetalist(4);
-      // actuate_motor.motor[5].pos = now_thetalist(5);
-      // actuate_motor.setPosition(groupSyncWrite);  
-
       // actuate velocity
       actuate_motor.motor[0].vel = thetalist_dot(0);
       actuate_motor.motor[1].vel = thetalist_dot(1);
@@ -268,24 +190,10 @@ int main()
 
       else
         std::cout << "to slow" << std::endl; 
-      // std::cout << sec.count() << std::endl; 
-      // if (i == n-1) // set velocity zero
-      // {
-      //   actuate_motor.motor[0].vel = 0;
-      //   actuate_motor.motor[1].vel = 0;
-      //   actuate_motor.motor[2].vel = 0;
-      //   actuate_motor.motor[3].vel = 0;
-      //   actuate_motor.motor[4].vel = 0;
-      //   actuate_motor.motor[5].vel = 0;
-      //   actuate_motor.setVelocity(groupSyncWrite);
-      //   std::cout<<"Moving End! "<<std::endl;
-      // }
       thetalist = now_thetalist;
     }
     thetalist_start = thetalist;
-    // usleep(500000);
     actuate_motor.getPosition(groupSyncRead);
-    // usleep(1000);
     thetalist_start(0) = actuate_motor.motor[0].measured_pos;
     thetalist_start(1) = actuate_motor.motor[1].measured_pos;
     thetalist_start(2) = actuate_motor.motor[2].measured_pos;
@@ -294,7 +202,6 @@ int main()
     thetalist_start(5) = actuate_motor.motor[5].measured_pos;
      
   }
-  
   actuate_motor.motor[0].vel = 0;
   actuate_motor.motor[1].vel = 0;
   actuate_motor.motor[2].vel = 0;
@@ -303,64 +210,6 @@ int main()
   actuate_motor.motor[5].vel = 0;
   actuate_motor.setVelocity(groupSyncWrite);
   
-  double t = 0;
-  double Duration = 0.02;
-  VectorXf thetalist_dot(6);
-  thetalist_dot << 0,0,0,0,0,0;
-  for (int i = 0; i < label_velocity.size(); i++)
-  {
-    std::chrono::system_clock::time_point start = std::chrono::system_clock::now();
-    VectorXf now_thetalist(6);
-    actuate_motor.getPosition(groupSyncRead);
-    now_thetalist(0) = actuate_motor.motor[0].measured_pos;
-    now_thetalist(1) = actuate_motor.motor[1].measured_pos;
-    now_thetalist(2) = actuate_motor.motor[2].measured_pos;
-    now_thetalist(3) = actuate_motor.motor[3].measured_pos;
-    now_thetalist(4) = actuate_motor.motor[4].measured_pos;
-    now_thetalist(5) = actuate_motor.motor[5].measured_pos;
-    
-    MatrixXf X_sb = FKinBody(M,Blist,now_thetalist);
-    MatrixXf R_sb = X_sb.block<3,3>(0,0);
-    VectorXf P_sb = X_sb.block<3,1>(0,3);
-    MatrixXf Jb = JacobianBody(Blist, now_thetalist);
-    
-    // VectorXf w_d(3);
-    // w_d << 0, 0, 0;
-    // VectorXf w_b = ((R_sb.transpose())*R_desired)*w_d;
-    VectorXf P_desired_dot(3);
-    VectorXf w_b(3);
-    P_desired_dot << 0, label_velocity[i], 0;
-    w_b << 0, 0, 0;
 
-    VectorXf twist_decoupled(6);    
-    twist_decoupled << w_b, P_desired_dot;
-    // twist_decoupled += Kp*Xe + Ki*Iterm;
-    MatrixXf J_decoupled(6,6);
-    J_decoupled << Jb.block<3,6>(0,0), R_sb*Jb.block<3,6>(3,0); 
-    MatrixXf J_decoupled_pinv = J_decoupled.completeOrthogonalDecomposition().pseudoInverse();
-    thetalist_dot = J_decoupled_pinv*twist_decoupled;
-    
-    actuate_motor.motor[0].vel = thetalist_dot(0);
-    actuate_motor.motor[1].vel = thetalist_dot(1);
-    actuate_motor.motor[2].vel = thetalist_dot(2);
-    actuate_motor.motor[3].vel = thetalist_dot(3);
-    actuate_motor.motor[4].vel = thetalist_dot(4);
-    actuate_motor.motor[5].vel = thetalist_dot(5);
-    actuate_motor.setVelocity(groupSyncWrite);
-    
-    std::chrono::duration<double>sec = std::chrono::system_clock::now() - start;
-    if (sec.count() < Duration)
-      usleep(int((Duration - sec.count())*1000000));
-  }
-  actuate_motor.motor[0].vel = 0;
-  actuate_motor.motor[1].vel = 0;
-  actuate_motor.motor[2].vel = 0;
-  actuate_motor.motor[3].vel = 0;
-  actuate_motor.motor[4].vel = 0;
-  actuate_motor.motor[5].vel = 0;
-  actuate_motor.setVelocity(groupSyncWrite);
-  std::cout<<"Moving End! "<<std::endl;
-
-  
   // actuate_motor.torque_off(portHandler, packetHandler); //motor releiving code
 }

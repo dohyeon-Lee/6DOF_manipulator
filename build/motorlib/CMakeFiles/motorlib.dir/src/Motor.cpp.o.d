@@ -1,7 +1,7 @@
 motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.o: \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/Motor.cpp \
+ /home/dohyeon/robot_arm/motorlib/src/Motor.cpp \
  /usr/include/stdc-predef.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/Motor.h \
+ /home/dohyeon/robot_arm/motorlib/include/Motor.h \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

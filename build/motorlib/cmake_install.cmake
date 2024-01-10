@@ -1,4 +1,4 @@
-# Install script for directory: /home/dohyeon/2023_UGRP_actuating_code/motorlib
+# Install script for directory: /home/dohyeon/robot_arm/motorlib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
