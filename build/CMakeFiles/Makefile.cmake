@@ -48,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/actuate.dir/DependInfo.cmake"
+  "CMakeFiles/actuate_velocity_traj.dir/DependInfo.cmake"
+  "CMakeFiles/actuate_basic.dir/DependInfo.cmake"
   "motorlib/CMakeFiles/motorlib.dir/DependInfo.cmake"
   )

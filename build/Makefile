@@ -117,17 +117,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named actuate
+# Target rules for targets named actuate_velocity_traj
 
 # Build rule for target.
-actuate: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actuate
-.PHONY : actuate
+actuate_velocity_traj: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actuate_velocity_traj
+.PHONY : actuate_velocity_traj
 
 # fast build rule for target.
-actuate/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/build
-.PHONY : actuate/fast
+actuate_velocity_traj/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_velocity_traj.dir/build.make CMakeFiles/actuate_velocity_traj.dir/build
+.PHONY : actuate_velocity_traj/fast
+
+#=============================================================================
+# Target rules for targets named actuate_basic
+
+# Build rule for target.
+actuate_basic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actuate_basic
+.PHONY : actuate_basic
+
+# fast build rule for target.
+actuate_basic/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_basic.dir/build.make CMakeFiles/actuate_basic.dir/build
+.PHONY : actuate_basic/fast
 
 #=============================================================================
 # Target rules for targets named motorlib
@@ -147,7 +160,8 @@ Robotics.o: Robotics.cpp.o
 
 # target to build an object file
 Robotics.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/Robotics.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_velocity_traj.dir/build.make CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_basic.dir/build.make CMakeFiles/actuate_basic.dir/Robotics.cpp.o
 .PHONY : Robotics.cpp.o
 
 Robotics.i: Robotics.cpp.i
@@ -155,7 +169,8 @@ Robotics.i: Robotics.cpp.i
 
 # target to preprocess a source file
 Robotics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/Robotics.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_velocity_traj.dir/build.make CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_basic.dir/build.make CMakeFiles/actuate_basic.dir/Robotics.cpp.i
 .PHONY : Robotics.cpp.i
 
 Robotics.s: Robotics.cpp.s
@@ -163,32 +178,57 @@ Robotics.s: Robotics.cpp.s
 
 # target to generate assembly for a file
 Robotics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/Robotics.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_velocity_traj.dir/build.make CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_basic.dir/build.make CMakeFiles/actuate_basic.dir/Robotics.cpp.s
 .PHONY : Robotics.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+actuate_basic.o: actuate_basic.cpp.o
+.PHONY : actuate_basic.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/main.cpp.o
-.PHONY : main.cpp.o
+actuate_basic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_basic.dir/build.make CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o
+.PHONY : actuate_basic.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+actuate_basic.i: actuate_basic.cpp.i
+.PHONY : actuate_basic.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/main.cpp.i
-.PHONY : main.cpp.i
+actuate_basic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_basic.dir/build.make CMakeFiles/actuate_basic.dir/actuate_basic.cpp.i
+.PHONY : actuate_basic.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+actuate_basic.s: actuate_basic.cpp.s
+.PHONY : actuate_basic.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/main.cpp.s
-.PHONY : main.cpp.s
+actuate_basic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_basic.dir/build.make CMakeFiles/actuate_basic.dir/actuate_basic.cpp.s
+.PHONY : actuate_basic.cpp.s
+
+position_velocity.o: position_velocity.cpp.o
+.PHONY : position_velocity.o
+
+# target to build an object file
+position_velocity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_velocity_traj.dir/build.make CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.o
+.PHONY : position_velocity.cpp.o
+
+position_velocity.i: position_velocity.cpp.i
+.PHONY : position_velocity.i
+
+# target to preprocess a source file
+position_velocity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_velocity_traj.dir/build.make CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.i
+.PHONY : position_velocity.cpp.i
+
+position_velocity.s: position_velocity.cpp.s
+.PHONY : position_velocity.s
+
+# target to generate assembly for a file
+position_velocity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_velocity_traj.dir/build.make CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.s
+.PHONY : position_velocity.cpp.s
 
 # Help Target
 help:
@@ -198,14 +238,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... actuate"
+	@echo "... actuate_basic"
+	@echo "... actuate_velocity_traj"
 	@echo "... motorlib"
 	@echo "... Robotics.o"
 	@echo "... Robotics.i"
 	@echo "... Robotics.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... actuate_basic.o"
+	@echo "... actuate_basic.i"
+	@echo "... actuate_basic.s"
+	@echo "... position_velocity.o"
+	@echo "... position_velocity.i"
+	@echo "... position_velocity.s"
 .PHONY : help
 
 

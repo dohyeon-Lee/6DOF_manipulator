@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = /home/dohyeon/2023_UGRP_actuating_code/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/actuate.dir/all
+all: CMakeFiles/actuate_velocity_traj.dir/all
+all: CMakeFiles/actuate_basic.dir/all
 all: motorlib/all
 .PHONY : all
 
@@ -72,7 +73,8 @@ preinstall: motorlib/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/actuate.dir/clean
+clean: CMakeFiles/actuate_velocity_traj.dir/clean
+clean: CMakeFiles/actuate_basic.dir/clean
 clean: motorlib/clean
 .PHONY : clean
 
@@ -92,30 +94,56 @@ motorlib/clean: motorlib/CMakeFiles/motorlib.dir/clean
 .PHONY : motorlib/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/actuate.dir
+# Target rules for target CMakeFiles/actuate_velocity_traj.dir
 
 # All Build rule for target.
-CMakeFiles/actuate.dir/all: motorlib/CMakeFiles/motorlib.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=1,2,3 "Built target actuate"
-.PHONY : CMakeFiles/actuate.dir/all
+CMakeFiles/actuate_velocity_traj.dir/all: motorlib/CMakeFiles/motorlib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_velocity_traj.dir/build.make CMakeFiles/actuate_velocity_traj.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_velocity_traj.dir/build.make CMakeFiles/actuate_velocity_traj.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=4,5,6 "Built target actuate_velocity_traj"
+.PHONY : CMakeFiles/actuate_velocity_traj.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/actuate.dir/rule: cmake_check_build_system
+CMakeFiles/actuate_velocity_traj.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles 18
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/actuate.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/actuate_velocity_traj.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles 0
-.PHONY : CMakeFiles/actuate.dir/rule
+.PHONY : CMakeFiles/actuate_velocity_traj.dir/rule
 
 # Convenience name for target.
-actuate: CMakeFiles/actuate.dir/rule
-.PHONY : actuate
+actuate_velocity_traj: CMakeFiles/actuate_velocity_traj.dir/rule
+.PHONY : actuate_velocity_traj
 
 # clean rule for target.
-CMakeFiles/actuate.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate.dir/build.make CMakeFiles/actuate.dir/clean
-.PHONY : CMakeFiles/actuate.dir/clean
+CMakeFiles/actuate_velocity_traj.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_velocity_traj.dir/build.make CMakeFiles/actuate_velocity_traj.dir/clean
+.PHONY : CMakeFiles/actuate_velocity_traj.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/actuate_basic.dir
+
+# All Build rule for target.
+CMakeFiles/actuate_basic.dir/all: motorlib/CMakeFiles/motorlib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_basic.dir/build.make CMakeFiles/actuate_basic.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_basic.dir/build.make CMakeFiles/actuate_basic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=1,2,3 "Built target actuate_basic"
+.PHONY : CMakeFiles/actuate_basic.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/actuate_basic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles 18
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/actuate_basic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles 0
+.PHONY : CMakeFiles/actuate_basic.dir/rule
+
+# Convenience name for target.
+actuate_basic: CMakeFiles/actuate_basic.dir/rule
+.PHONY : actuate_basic
+
+# clean rule for target.
+CMakeFiles/actuate_basic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_basic.dir/build.make CMakeFiles/actuate_basic.dir/clean
+.PHONY : CMakeFiles/actuate_basic.dir/clean
 
 #=============================================================================
 # Target rules for target motorlib/CMakeFiles/motorlib.dir
@@ -124,7 +152,7 @@ CMakeFiles/actuate.dir/clean:
 motorlib/CMakeFiles/motorlib.dir/all:
 	$(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/depend
 	$(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target motorlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target motorlib"
 .PHONY : motorlib/CMakeFiles/motorlib.dir/all
 
 # Build rule for subdir invocation for target.

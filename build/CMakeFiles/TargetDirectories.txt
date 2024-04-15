@@ -1,4 +1,5 @@
-/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles/actuate.dir
+/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles/actuate_velocity_traj.dir
+/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles/actuate_basic.dir
 /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles/edit_cache.dir
 /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles/rebuild_cache.dir
 /home/dohyeon/2023_UGRP_actuating_code/build/motorlib/CMakeFiles/motorlib.dir
