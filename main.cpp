@@ -29,13 +29,15 @@ using namespace std;
 
 vector<double> readfile()
 {
-  string filename = "/home/dohyeon/2023_UGRP_actuating_code/velocity_test.csv";
+  string filename = "/home/dohyeon/2023_UGRP_actuating_code/velocity_test.csv"; // you have to change directory path
   ifstream file(filename);
-  // if(!file.is_open())
-  // {
-  //   cout << "can't open file" << endl;
-  //   return 1;
-  // }
+  if(!file.is_open())
+  {
+    cout << "can't open file. check directory path" << endl;
+    vector<double> fail_vec;
+    fail_vec.push_back(-1);
+    return fail_vec;
+  }
   vector<double> label_velocity;
   string line;
   double value;
@@ -60,9 +62,10 @@ int main()
 {
 
   vector<double> label_velocity = readfile();
-  for (const auto& val:label_velocity)
+  if (label_velocity.size() <= 1)
   {
-    cout << val << endl;
+    cout << "fail to load velocity trajectory" << endl;
+    return 0;
   }
 
   dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler(DEVICENAME);
