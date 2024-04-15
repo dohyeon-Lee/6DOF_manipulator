@@ -70,13 +70,11 @@ int main()
   uint16_t data_length = LEN_MX_GOAL_CURRENT + LEN_MX_GOAL_VELOCITY + 4 + 4 + LEN_MX_GOAL_POSITION;
   dynamixel::GroupSyncWrite groupSyncWrite(portHandler, packetHandler, ADDR_MX_GOAL_CURRENT, data_length); //vel,pos,torque 
   dynamixel::GroupSyncRead groupSyncRead(portHandler, packetHandler, ADDR_MX_PRESENT_POSITION, LEN_MX_PRESENT_POSITION);
-  // dynamixel::GroupFastSyncRead groupFastSyncRead(portHandler, packetHandler, ADDR_MX_PRESENT_POSITION, LEN_MX_PRESENT_POSITION);
-  // dynamixel::GroupSyncWrite groupSyncWrite(portHandler, packetHandler, ADDR_MX_GOAL_VELOCITY, LEN_MX_GOAL_VELOCITY);
   portHandler->openPort();
   portHandler->setBaudRate(BAUDRATE);
   vector<Motor> motor;
 
-  //여기까지 건들필요없음
+  //setting finish
 
   motor.push_back(Motor(1));
   motor.push_back(Motor(2));
@@ -124,7 +122,7 @@ int main()
   double Kp = 0.8;
   double Ki = 0.01;
   actuate_motor.setMode(portHandler, packetHandler, VELOCITY_MODE);
-  for (int j = 0; j < Xpoint.size()-1; j++)//
+  for (int j = 0; j < Xpoint.size()-1; j++)
   {
     std::cout<<"start moving to the desired position: " <<  j <<std::endl;
     
