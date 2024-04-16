@@ -18,11 +18,33 @@
 ```
 cd 6DOF_manipulator
 cd build
-```
-```
 cmake ..
-```
-```
 make
 ```
 Then ```actuate_basic.exe```, ```actuate_robotics.exe```, ```actuate_velocity_traj.exe``` will be made in ```/build``` directory.
+
+* execution
+  * before execution, you have to do USB port open & change USB latency
+    ```
+    sudo chmod a+rw /dev/ttyUSB0
+    ```
+    ```
+    sudo gedit /sys/bus/usb-serial/devices/ttyUSB0/latency_timer
+    ```
+    Then gedit file open, change number 16 -> 1 in file and save.
+    These two works need just once time after connected usb.
+  * go to ```/build``` directory and
+    ```
+    ./actuate_basic
+    ```
+    or
+    ```
+    ./actuate_robotics
+    ```
+    or
+    ```
+    ./actuate_velocity_traj
+    ```
+    Then robot will actuated.
+     
+    
