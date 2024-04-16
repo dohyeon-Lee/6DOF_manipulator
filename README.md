@@ -24,7 +24,7 @@ cmake ..
 make
 ```
 Then ```actuate_basic.exe```, ```actuate_robotics.exe```, ```actuate_velocity_traj.exe``` will be made in ```/build``` directory.
-If you change code, then just do ```make``` at ```/build``` directory. ```cmake ..``` only do when ```CMakeLists.txt``` file changed.
+If you change code, then just do ```make``` at ```/build``` directory. Doing ```cmake ..``` when ```CMakeLists.txt``` file changed.
 
 * execution
   * before execution, you have to do USB port open & change USB latency
