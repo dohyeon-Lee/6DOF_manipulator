@@ -15,7 +15,7 @@
   ```
   Please install other required dependencies which I missed too.
 
-# build & execution
+# Build & Execution
 remove all file in ```/build``` directory then do
 ```
 cd 6DOF_manipulator
@@ -50,7 +50,7 @@ If you change code, then just do ```make``` at ```/build``` directory. Doing ```
     ```
     Then robot will actuated.
     
-# about code
+# About code
 ### actuate_basic.cpp
 * This code introduce how to actuate motors. You can control motor with position mode, velocity mode, torque mode.
 * You can check how to add motors, get position data from encoders, change motor control mode. 
