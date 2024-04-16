@@ -48,7 +48,7 @@ Then ```actuate_basic.exe```, ```actuate_robotics.exe```, ```actuate_velocity_tr
     ./actuate_velocity_traj
     ```
     Then robot will actuated.
-    If you change code, then just do ```make``` at ```/build``` directory. ```cmake ..`` only do when ```CMakeLists.txt``` file changed.
+    If you change code, then just do ```make``` at ```/build``` directory. ```cmake ..``` only do when ```CMakeLists.txt``` file changed.
 # about code
 ### actuate_basic.cpp
 * This code introduce how to actuate motors. You can control motor with position mode, velocity mode, torque mode.
