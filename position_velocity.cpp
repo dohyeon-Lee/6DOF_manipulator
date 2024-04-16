@@ -216,10 +216,8 @@ int main()
       std::chrono::duration<double>sec = std::chrono::system_clock::now() - start;
       if (sec.count() < Duration)
         usleep(int((Duration - sec.count())*1000000));
-
       else
-        std::cout << "to slow" << std::endl; 
-      thetalist = now_thetalist;
+        std::cout << "desired Hz is too high" << std::endl; 
     }
     thetalist_start = thetalist;
     // usleep(500000);
