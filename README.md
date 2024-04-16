@@ -32,7 +32,7 @@ Then ```actuate_basic.exe```, ```actuate_robotics.exe```, ```actuate_velocity_tr
     ```
     sudo gedit /sys/bus/usb-serial/devices/ttyUSB0/latency_timer
     ```
-    Then gedit file open, change number 16 -> 1 in file and save.
+    Then change number 16 -> 1 in file and save.
     These two works need just once time after connected usb.
   * go to ```/build``` directory and
     ```
