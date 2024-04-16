@@ -9,10 +9,11 @@
   sudo apt update -y
   sudo apt install libeigen3-dev
   ```
-  check install
+  Check install
   ```
   dpkg -S libeigen3-dev
   ```
+  Please install other required dependencies which I missed too.
 
 # build & execution
 ```
@@ -47,4 +48,8 @@ Then ```actuate_basic.exe```, ```actuate_robotics.exe```, ```actuate_velocity_tr
     ```
     Then robot will actuated.
      
-    
+# about code
+* actuate_basic.cpp
+  * This code introduce how to actuate motors. You can control motor with position mode, velocity mode, torque mode.
+  * you can check how to add motors, get position data from encoders, change motor control mode. 
+  * execution file is ```actuate_basic.exe``` 
