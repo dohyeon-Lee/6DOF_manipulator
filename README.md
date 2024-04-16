@@ -24,6 +24,7 @@ cmake ..
 make
 ```
 Then ```actuate_basic.exe```, ```actuate_robotics.exe```, ```actuate_velocity_traj.exe``` will be made in ```/build``` directory.
+If you change code, then just do ```make``` at ```/build``` directory. ```cmake ..``` only do when ```CMakeLists.txt``` file changed.
 
 * execution
   * before execution, you have to do USB port open & change USB latency
@@ -48,7 +49,7 @@ Then ```actuate_basic.exe```, ```actuate_robotics.exe```, ```actuate_velocity_tr
     ./actuate_velocity_traj
     ```
     Then robot will actuated.
-    If you change code, then just do ```make``` at ```/build``` directory. ```cmake ..``` only do when ```CMakeLists.txt``` file changed.
+    
 # about code
 ### actuate_basic.cpp
 * This code introduce how to actuate motors. You can control motor with position mode, velocity mode, torque mode.
