@@ -1,10 +1,10 @@
 # Environment
 * ubuntu 22.04 (recommend)
-* c++ development environment
+* C++ development environment
   ```
   sudo apt install build-essential
   ```
-* install eigen3
+* Install eigen3
   ```
   sudo apt update -y
   sudo apt install libeigen3-dev
@@ -16,6 +16,7 @@
   Please install other required dependencies which I missed too.
 
 # build & execution
+remove all file in ```/build``` directory then do
 ```
 cd 6DOF_manipulator
 cd build
@@ -47,7 +48,7 @@ Then ```actuate_basic.exe```, ```actuate_robotics.exe```, ```actuate_velocity_tr
     ./actuate_velocity_traj
     ```
     Then robot will actuated.
-     
+    if you change code, then you just do ```make``` at ```/build``` directory.
 # about code
 ### actuate_basic.cpp
 * This code introduce how to actuate motors. You can control motor with position mode, velocity mode, torque mode.
