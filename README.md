@@ -49,12 +49,18 @@ Then ```actuate_basic.exe```, ```actuate_robotics.exe```, ```actuate_velocity_tr
     Then robot will actuated.
      
 # about code
-### ```actuate_basic.cpp```
+### actuate_basic.cpp
 * This code introduce how to actuate motors. You can control motor with position mode, velocity mode, torque mode.
 * You can check how to add motors, get position data from encoders, change motor control mode. 
 * Exe file is ```actuate_basic.exe```
 * If your environment is under ubuntu 22.04, then you can execution only ```actuate_basic.exe```. ```actuate_robotics.exe``` and ```actuate_velocity_traj.exe``` only available in ubuntu 22.04 . It because one function ```seq``` in eigen3 is only work on 22.04.
 * if your environment is under ubuntu 22.04, you also change ```6DOF_manipulator/CMakeLists.txt``` file little.
 
-### ```actuate_robotics.cpp```
-*
+### actuate_robotics.cpp
+* You can use function about robotics such as Fkinbody (forward kinematics), jacobian ...etc
+* This code move robot endeffector point to point. You can change endeffector's trajectory.
+* Exe file is ```actuate_robotics.exe```
+
+### position_velocity.cpp
+* Example code about velocity trajectory tracking. ```velocity_test.csv``` is velocity trajectory about endeffector, and manipulator's endeffector tracking that trajectory.
+* Exe file is ```actuate_velocity_traj.exe```
