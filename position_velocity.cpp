@@ -1,3 +1,4 @@
+/* 2024. 04. 16 Dohyeon Lee POSTECH */
 #include <fcntl.h>
 #include <termios.h>
 #define STDIN_FILENO 0
@@ -135,7 +136,7 @@ int main()
     MatrixXf P_end = Xpoint[j+1].block<3,1>(0,3);
 
     double t = 0;
-    double Duration = 0.02; // The original value of the Duration was 0.06 !!
+    double Duration = 0.02; // 50Hz
     VectorXf thetalist = thetalist_start;
     VectorXf thetalist_dot(6);
     thetalist_dot << 0,0,0,0,0,0;
@@ -143,7 +144,8 @@ int main()
     MatrixXf before_P_desired = P_start + (P_end - P_start)*0;
 
     // actuate
-    int n = 100;
+    double seconds = 2; // seconds for move endeffector point to point 
+    int n = int(seconds / Duration); 
     VectorXf Iterm(6);
     Iterm << 0,0,0,0,0,0;
     

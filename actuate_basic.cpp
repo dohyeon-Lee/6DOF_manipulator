@@ -1,3 +1,4 @@
+/* 2024. 04. 16 Dohyeon Lee POSTECH */
 #include <fcntl.h>
 #include <termios.h>
 #define STDIN_FILENO 0
@@ -24,7 +25,7 @@
 using std::vector;
 using namespace std;
 // inital setting 
-// 1. sudo chmod a+rw /dev/ttyUSB0
+// 1. sudo chmod a+rw /dev/ttyUSB0 (check your USB port name)
 // 2. sudo gedit /sys/bus/usb-serial/devices/ttyUSB0/latency_timer and change 16 --> 1
 
 int main()
@@ -94,6 +95,6 @@ int main()
   now_thetalist(3) = actuate_motor.motor[3].measured_pos;
   now_thetalist(4) = actuate_motor.motor[4].measured_pos;
   now_thetalist(5) = actuate_motor.motor[5].measured_pos;
-  std::cout << now_thetalist << std::endl;
+  std::cout << now_thetalist << std::endl; // print angle
 
 }
