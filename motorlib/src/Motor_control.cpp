@@ -37,17 +37,24 @@ int Motor_control::velocity(double rad_per_sec)
     return output;
 };
 
-int Motor_control::torque(double Nm)
+int Motor_control::torque(double Nm_)
 {
-    int output = int(fmap(Nm, 0.4, 8.6, 0.28, 4.06)); // N-T curve
-    if(output > 8.6)
-    {
-        output = 8.6;
-    }
-    else if(output < -8.6)
-    {
-        output = -8.6;
-    }
+    double Nm = Nm_;
+    if(Nm > 8.6)
+        Nm = 8.6;
+    else if(Nm < -8.6)
+        Nm = -8.6;
+    double current = fmap(Nm, -8.6, 8.6, -4.06, 4.06); // N-T curve (torque(Nm) -> current(A))
+    
+    // current limit : 2047 (0~2047), minimum control current : 2.69mA
+    double minimum_current = 2.69 * 0.001;
+    int output = int(current / minimum_current);
+    
+    if(output > 2047)
+        output = 2047;
+    else if(output < -2047)
+        output = -2047;
+    
     return output;
 };
 

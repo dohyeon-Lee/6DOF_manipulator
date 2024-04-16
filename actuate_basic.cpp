@@ -49,7 +49,7 @@ int main()
   motor.push_back(Motor(6));
   Motor_control actuate_motor(motor);
 
- // position control 
+ // position control (radian)
   actuate_motor.setMode(portHandler, packetHandler, POSITION_MODE);
   actuate_motor.motor[0].pos = 0;
   actuate_motor.motor[1].pos = 0;
@@ -61,7 +61,7 @@ int main()
 
   usleep(5000000); // delay 5 seconds
 
-  // velocity control
+  // velocity control (rad/s)
   actuate_motor.setMode(portHandler, packetHandler, VELOCITY_MODE);
   actuate_motor.motor[0].vel = 0;
   actuate_motor.motor[1].vel = 0;
@@ -73,7 +73,19 @@ int main()
 
   usleep(5000000); // delay 5 seconds
 
-  // read encoder
+  // torque control (Nm)
+  actuate_motor.setMode(portHandler, packetHandler, CURRENT_MODE);
+  actuate_motor.motor[0].torque = 0;
+  actuate_motor.motor[1].torque = 0;
+  actuate_motor.motor[2].torque = 0;
+  actuate_motor.motor[3].torque = 0;
+  actuate_motor.motor[4].torque = 0;
+  actuate_motor.motor[5].torque = 0;
+  actuate_motor.setVelocity(groupSyncWrite);
+
+  usleep(5000000); // delay 5 seconds
+
+  // read encoder (radian)
   actuate_motor.getPosition(groupSyncRead);
   VectorXf now_thetalist(6);
   now_thetalist(0) = actuate_motor.motor[0].measured_pos;
@@ -83,5 +95,5 @@ int main()
   now_thetalist(4) = actuate_motor.motor[4].measured_pos;
   now_thetalist(5) = actuate_motor.motor[5].measured_pos;
   std::cout << now_thetalist << std::endl;
-  
+
 }
