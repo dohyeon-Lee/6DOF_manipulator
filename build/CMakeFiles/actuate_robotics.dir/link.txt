@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/actuate_robotics.dir/actuate_robotics.cpp.o CMakeFiles/actuate_robotics.dir/Robotics.cpp.o -o actuate_robotics  motorlib/libmotorlib.a 

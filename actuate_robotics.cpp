@@ -84,7 +84,7 @@ int main()
   thetalist_start(5) = actuate_motor.motor[5].measured_pos;
   
   /* trajectory points */
-  MatrixXf X_start = FKinBody(M, Blist, thetalist_start);
+  MatrixXf X_start = FKinBody(M, Blist, thetalist_start); // forward kinematics
 
   MatrixXf X_end1(4,4);
   X_end1 << 0, 0, 1, 0.2,
