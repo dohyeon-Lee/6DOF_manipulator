@@ -1,4 +1,5 @@
-https://github.com/dohyeon-Lee/6DOF_manipulator/issues/1#issue-2252191529
+![rendering_image](https://github.com/dohyeon-Lee/6DOF_manipulator/assets/89124798/41d3882c-e3e0-4381-bd58-96c7365f0902)
+
 
 # Environment
 * ubuntu 22.04 (recommend)
@@ -68,3 +69,8 @@ If you change code, then just do ```make``` at ```/build``` directory. Doing ```
 ### position_velocity.cpp
 * Example code about velocity trajectory tracking. ```velocity_test.csv``` is velocity trajectory about endeffector, and manipulator's endeffector tracking that trajectory.
 * Exe file is ```actuate_velocity_traj.exe```
+
+# 3D_model
+* solidworks files & stl files
+* urdf
+* robotics body twist configuration
