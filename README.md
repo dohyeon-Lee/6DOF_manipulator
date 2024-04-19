@@ -1,3 +1,5 @@
+https://github.com/dohyeon-Lee/6DOF_manipulator/issues/1#issue-2252191529
+
 # Environment
 * ubuntu 22.04 (recommend)
 * C++ development environment
