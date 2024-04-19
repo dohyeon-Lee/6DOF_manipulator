@@ -1,5 +1,5 @@
 CMakeFiles/actuate_robotics.dir/actuate_robotics.cpp.o: \
- /home/dohyeon/2023_UGRP_actuating_code/actuate_robotics.cpp \
+ /home/dohyeon/6DOF_manipulator/actuate_robotics.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -128,7 +128,7 @@ CMakeFiles/actuate_robotics.dir/actuate_robotics.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/Motor.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/Motor.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -152,7 +152,7 @@ CMakeFiles/actuate_robotics.dir/actuate_robotics.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/Motor_control.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/Motor_control.h \
  /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -181,11 +181,11 @@ CMakeFiles/actuate_robotics.dir/actuate_robotics.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/dynamixel_sdk.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_bulk_read.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/port_handler.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/packet_handler.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_handler.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/dynamixel_sdk.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/group_bulk_read.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/port_handler.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/packet_handler.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/group_handler.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/node_handle.h \
@@ -195,12 +195,12 @@ CMakeFiles/actuate_robotics.dir/actuate_robotics.cpp.o: \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_bulk_write.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_sync_read.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_sync_write.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_fast_sync_read.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_fast_bulk_read.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/Motor.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/group_bulk_write.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/group_sync_read.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/group_sync_write.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/group_fast_sync_read.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/group_fast_bulk_read.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/Motor.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \
@@ -233,8 +233,7 @@ CMakeFiles/actuate_robotics.dir/actuate_robotics.cpp.o: \
  /usr/include/c++/11/bits/unique_ptr.h \
  /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc \
- /home/dohyeon/2023_UGRP_actuating_code/Robotics.h \
- /usr/include/eigen3/Eigen/Core \
+ /home/dohyeon/6DOF_manipulator/Robotics.h /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
  /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \

@@ -1,7 +1,7 @@
 motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.o: \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_handler.cpp \
+ /home/dohyeon/6DOF_manipulator/motorlib/src/group_handler.cpp \
  /usr/include/stdc-predef.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_handler.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/group_handler.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -55,7 +55,7 @@ motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.o: \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/port_handler.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/port_handler.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -64,7 +64,7 @@ motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/packet_handler.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/packet_handler.h \
  /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \

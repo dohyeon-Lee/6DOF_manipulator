@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dohyeon/2023_UGRP_actuating_code
+CMAKE_SOURCE_DIR = /home/dohyeon/6DOF_manipulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dohyeon/2023_UGRP_actuating_code/build
+CMAKE_BINARY_DIR = /home/dohyeon/6DOF_manipulator/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles /home/dohyeon/2023_UGRP_actuating_code/build/motorlib//CMakeFiles/progress.marks
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motorlib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles 0
+	cd /home/dohyeon/6DOF_manipulator/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/6DOF_manipulator/build/CMakeFiles /home/dohyeon/6DOF_manipulator/build/motorlib//CMakeFiles/progress.marks
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motorlib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/6DOF_manipulator/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motorlib/clean
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motorlib/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motorlib/preinstall
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motorlib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motorlib/preinstall
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motorlib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dohyeon/6DOF_manipulator/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 motorlib/CMakeFiles/motorlib.dir/rule:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motorlib/CMakeFiles/motorlib.dir/rule
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motorlib/CMakeFiles/motorlib.dir/rule
 .PHONY : motorlib/CMakeFiles/motorlib.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ motorlib: motorlib/CMakeFiles/motorlib.dir/rule
 
 # fast build rule for target.
 motorlib/fast:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/build
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/build
 .PHONY : motorlib/fast
 
 src/Motor.o: src/Motor.cpp.o
@@ -135,7 +135,7 @@ src/Motor.o: src/Motor.cpp.o
 
 # target to build an object file
 src/Motor.cpp.o:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.o
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.o
 .PHONY : src/Motor.cpp.o
 
 src/Motor.i: src/Motor.cpp.i
@@ -143,7 +143,7 @@ src/Motor.i: src/Motor.cpp.i
 
 # target to preprocess a source file
 src/Motor.cpp.i:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.i
 .PHONY : src/Motor.cpp.i
 
 src/Motor.s: src/Motor.cpp.s
@@ -151,7 +151,7 @@ src/Motor.s: src/Motor.cpp.s
 
 # target to generate assembly for a file
 src/Motor.cpp.s:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.s
 .PHONY : src/Motor.cpp.s
 
 src/Motor_control.o: src/Motor_control.cpp.o
@@ -159,7 +159,7 @@ src/Motor_control.o: src/Motor_control.cpp.o
 
 # target to build an object file
 src/Motor_control.cpp.o:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.o
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.o
 .PHONY : src/Motor_control.cpp.o
 
 src/Motor_control.i: src/Motor_control.cpp.i
@@ -167,7 +167,7 @@ src/Motor_control.i: src/Motor_control.cpp.i
 
 # target to preprocess a source file
 src/Motor_control.cpp.i:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.i
 .PHONY : src/Motor_control.cpp.i
 
 src/Motor_control.s: src/Motor_control.cpp.s
@@ -175,7 +175,7 @@ src/Motor_control.s: src/Motor_control.cpp.s
 
 # target to generate assembly for a file
 src/Motor_control.cpp.s:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.s
 .PHONY : src/Motor_control.cpp.s
 
 src/group_bulk_read.o: src/group_bulk_read.cpp.o
@@ -183,7 +183,7 @@ src/group_bulk_read.o: src/group_bulk_read.cpp.o
 
 # target to build an object file
 src/group_bulk_read.cpp.o:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o
 .PHONY : src/group_bulk_read.cpp.o
 
 src/group_bulk_read.i: src/group_bulk_read.cpp.i
@@ -191,7 +191,7 @@ src/group_bulk_read.i: src/group_bulk_read.cpp.i
 
 # target to preprocess a source file
 src/group_bulk_read.cpp.i:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.i
 .PHONY : src/group_bulk_read.cpp.i
 
 src/group_bulk_read.s: src/group_bulk_read.cpp.s
@@ -199,7 +199,7 @@ src/group_bulk_read.s: src/group_bulk_read.cpp.s
 
 # target to generate assembly for a file
 src/group_bulk_read.cpp.s:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.s
 .PHONY : src/group_bulk_read.cpp.s
 
 src/group_bulk_write.o: src/group_bulk_write.cpp.o
@@ -207,7 +207,7 @@ src/group_bulk_write.o: src/group_bulk_write.cpp.o
 
 # target to build an object file
 src/group_bulk_write.cpp.o:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.o
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.o
 .PHONY : src/group_bulk_write.cpp.o
 
 src/group_bulk_write.i: src/group_bulk_write.cpp.i
@@ -215,7 +215,7 @@ src/group_bulk_write.i: src/group_bulk_write.cpp.i
 
 # target to preprocess a source file
 src/group_bulk_write.cpp.i:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.i
 .PHONY : src/group_bulk_write.cpp.i
 
 src/group_bulk_write.s: src/group_bulk_write.cpp.s
@@ -223,7 +223,7 @@ src/group_bulk_write.s: src/group_bulk_write.cpp.s
 
 # target to generate assembly for a file
 src/group_bulk_write.cpp.s:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.s
 .PHONY : src/group_bulk_write.cpp.s
 
 src/group_fast_bulk_read.o: src/group_fast_bulk_read.cpp.o
@@ -231,7 +231,7 @@ src/group_fast_bulk_read.o: src/group_fast_bulk_read.cpp.o
 
 # target to build an object file
 src/group_fast_bulk_read.cpp.o:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.o
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.o
 .PHONY : src/group_fast_bulk_read.cpp.o
 
 src/group_fast_bulk_read.i: src/group_fast_bulk_read.cpp.i
@@ -239,7 +239,7 @@ src/group_fast_bulk_read.i: src/group_fast_bulk_read.cpp.i
 
 # target to preprocess a source file
 src/group_fast_bulk_read.cpp.i:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.i
 .PHONY : src/group_fast_bulk_read.cpp.i
 
 src/group_fast_bulk_read.s: src/group_fast_bulk_read.cpp.s
@@ -247,7 +247,7 @@ src/group_fast_bulk_read.s: src/group_fast_bulk_read.cpp.s
 
 # target to generate assembly for a file
 src/group_fast_bulk_read.cpp.s:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.s
 .PHONY : src/group_fast_bulk_read.cpp.s
 
 src/group_fast_sync_read.o: src/group_fast_sync_read.cpp.o
@@ -255,7 +255,7 @@ src/group_fast_sync_read.o: src/group_fast_sync_read.cpp.o
 
 # target to build an object file
 src/group_fast_sync_read.cpp.o:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.o
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.o
 .PHONY : src/group_fast_sync_read.cpp.o
 
 src/group_fast_sync_read.i: src/group_fast_sync_read.cpp.i
@@ -263,7 +263,7 @@ src/group_fast_sync_read.i: src/group_fast_sync_read.cpp.i
 
 # target to preprocess a source file
 src/group_fast_sync_read.cpp.i:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.i
 .PHONY : src/group_fast_sync_read.cpp.i
 
 src/group_fast_sync_read.s: src/group_fast_sync_read.cpp.s
@@ -271,7 +271,7 @@ src/group_fast_sync_read.s: src/group_fast_sync_read.cpp.s
 
 # target to generate assembly for a file
 src/group_fast_sync_read.cpp.s:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.s
 .PHONY : src/group_fast_sync_read.cpp.s
 
 src/group_handler.o: src/group_handler.cpp.o
@@ -279,7 +279,7 @@ src/group_handler.o: src/group_handler.cpp.o
 
 # target to build an object file
 src/group_handler.cpp.o:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.o
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.o
 .PHONY : src/group_handler.cpp.o
 
 src/group_handler.i: src/group_handler.cpp.i
@@ -287,7 +287,7 @@ src/group_handler.i: src/group_handler.cpp.i
 
 # target to preprocess a source file
 src/group_handler.cpp.i:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.i
 .PHONY : src/group_handler.cpp.i
 
 src/group_handler.s: src/group_handler.cpp.s
@@ -295,7 +295,7 @@ src/group_handler.s: src/group_handler.cpp.s
 
 # target to generate assembly for a file
 src/group_handler.cpp.s:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.s
 .PHONY : src/group_handler.cpp.s
 
 src/group_sync_read.o: src/group_sync_read.cpp.o
@@ -303,7 +303,7 @@ src/group_sync_read.o: src/group_sync_read.cpp.o
 
 # target to build an object file
 src/group_sync_read.cpp.o:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.o
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.o
 .PHONY : src/group_sync_read.cpp.o
 
 src/group_sync_read.i: src/group_sync_read.cpp.i
@@ -311,7 +311,7 @@ src/group_sync_read.i: src/group_sync_read.cpp.i
 
 # target to preprocess a source file
 src/group_sync_read.cpp.i:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.i
 .PHONY : src/group_sync_read.cpp.i
 
 src/group_sync_read.s: src/group_sync_read.cpp.s
@@ -319,7 +319,7 @@ src/group_sync_read.s: src/group_sync_read.cpp.s
 
 # target to generate assembly for a file
 src/group_sync_read.cpp.s:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.s
 .PHONY : src/group_sync_read.cpp.s
 
 src/group_sync_write.o: src/group_sync_write.cpp.o
@@ -327,7 +327,7 @@ src/group_sync_write.o: src/group_sync_write.cpp.o
 
 # target to build an object file
 src/group_sync_write.cpp.o:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.o
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.o
 .PHONY : src/group_sync_write.cpp.o
 
 src/group_sync_write.i: src/group_sync_write.cpp.i
@@ -335,7 +335,7 @@ src/group_sync_write.i: src/group_sync_write.cpp.i
 
 # target to preprocess a source file
 src/group_sync_write.cpp.i:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.i
 .PHONY : src/group_sync_write.cpp.i
 
 src/group_sync_write.s: src/group_sync_write.cpp.s
@@ -343,7 +343,7 @@ src/group_sync_write.s: src/group_sync_write.cpp.s
 
 # target to generate assembly for a file
 src/group_sync_write.cpp.s:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.s
 .PHONY : src/group_sync_write.cpp.s
 
 src/packet_handler.o: src/packet_handler.cpp.o
@@ -351,7 +351,7 @@ src/packet_handler.o: src/packet_handler.cpp.o
 
 # target to build an object file
 src/packet_handler.cpp.o:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.o
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.o
 .PHONY : src/packet_handler.cpp.o
 
 src/packet_handler.i: src/packet_handler.cpp.i
@@ -359,7 +359,7 @@ src/packet_handler.i: src/packet_handler.cpp.i
 
 # target to preprocess a source file
 src/packet_handler.cpp.i:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.i
 .PHONY : src/packet_handler.cpp.i
 
 src/packet_handler.s: src/packet_handler.cpp.s
@@ -367,7 +367,7 @@ src/packet_handler.s: src/packet_handler.cpp.s
 
 # target to generate assembly for a file
 src/packet_handler.cpp.s:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.s
 .PHONY : src/packet_handler.cpp.s
 
 src/port_handler.o: src/port_handler.cpp.o
@@ -375,7 +375,7 @@ src/port_handler.o: src/port_handler.cpp.o
 
 # target to build an object file
 src/port_handler.cpp.o:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.o
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.o
 .PHONY : src/port_handler.cpp.o
 
 src/port_handler.i: src/port_handler.cpp.i
@@ -383,7 +383,7 @@ src/port_handler.i: src/port_handler.cpp.i
 
 # target to preprocess a source file
 src/port_handler.cpp.i:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.i
 .PHONY : src/port_handler.cpp.i
 
 src/port_handler.s: src/port_handler.cpp.s
@@ -391,7 +391,7 @@ src/port_handler.s: src/port_handler.cpp.s
 
 # target to generate assembly for a file
 src/port_handler.cpp.s:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.s
 .PHONY : src/port_handler.cpp.s
 
 src/port_handler_linux.o: src/port_handler_linux.cpp.o
@@ -399,7 +399,7 @@ src/port_handler_linux.o: src/port_handler_linux.cpp.o
 
 # target to build an object file
 src/port_handler_linux.cpp.o:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.o
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.o
 .PHONY : src/port_handler_linux.cpp.o
 
 src/port_handler_linux.i: src/port_handler_linux.cpp.i
@@ -407,7 +407,7 @@ src/port_handler_linux.i: src/port_handler_linux.cpp.i
 
 # target to preprocess a source file
 src/port_handler_linux.cpp.i:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.i
 .PHONY : src/port_handler_linux.cpp.i
 
 src/port_handler_linux.s: src/port_handler_linux.cpp.s
@@ -415,7 +415,7 @@ src/port_handler_linux.s: src/port_handler_linux.cpp.s
 
 # target to generate assembly for a file
 src/port_handler_linux.cpp.s:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.s
 .PHONY : src/port_handler_linux.cpp.s
 
 src/protocol1_packet_handler.o: src/protocol1_packet_handler.cpp.o
@@ -423,7 +423,7 @@ src/protocol1_packet_handler.o: src/protocol1_packet_handler.cpp.o
 
 # target to build an object file
 src/protocol1_packet_handler.cpp.o:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.o
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.o
 .PHONY : src/protocol1_packet_handler.cpp.o
 
 src/protocol1_packet_handler.i: src/protocol1_packet_handler.cpp.i
@@ -431,7 +431,7 @@ src/protocol1_packet_handler.i: src/protocol1_packet_handler.cpp.i
 
 # target to preprocess a source file
 src/protocol1_packet_handler.cpp.i:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.i
 .PHONY : src/protocol1_packet_handler.cpp.i
 
 src/protocol1_packet_handler.s: src/protocol1_packet_handler.cpp.s
@@ -439,7 +439,7 @@ src/protocol1_packet_handler.s: src/protocol1_packet_handler.cpp.s
 
 # target to generate assembly for a file
 src/protocol1_packet_handler.cpp.s:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.s
 .PHONY : src/protocol1_packet_handler.cpp.s
 
 src/protocol2_packet_handler.o: src/protocol2_packet_handler.cpp.o
@@ -447,7 +447,7 @@ src/protocol2_packet_handler.o: src/protocol2_packet_handler.cpp.o
 
 # target to build an object file
 src/protocol2_packet_handler.cpp.o:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.o
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.o
 .PHONY : src/protocol2_packet_handler.cpp.o
 
 src/protocol2_packet_handler.i: src/protocol2_packet_handler.cpp.i
@@ -455,7 +455,7 @@ src/protocol2_packet_handler.i: src/protocol2_packet_handler.cpp.i
 
 # target to preprocess a source file
 src/protocol2_packet_handler.cpp.i:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.i
 .PHONY : src/protocol2_packet_handler.cpp.i
 
 src/protocol2_packet_handler.s: src/protocol2_packet_handler.cpp.s
@@ -463,7 +463,7 @@ src/protocol2_packet_handler.s: src/protocol2_packet_handler.cpp.s
 
 # target to generate assembly for a file
 src/protocol2_packet_handler.cpp.s:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build && $(MAKE) $(MAKESILENT) -f motorlib/CMakeFiles/motorlib.dir/build.make motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.s
 .PHONY : src/protocol2_packet_handler.cpp.s
 
 # Help Target
@@ -528,6 +528,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dohyeon/6DOF_manipulator/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

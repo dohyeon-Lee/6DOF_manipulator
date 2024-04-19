@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dohyeon/2023_UGRP_actuating_code
+CMAKE_SOURCE_DIR = /home/dohyeon/6DOF_manipulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dohyeon/2023_UGRP_actuating_code/build
+CMAKE_BINARY_DIR = /home/dohyeon/6DOF_manipulator/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/actuate_basic.dir/depend.make
@@ -72,45 +72,29 @@ include CMakeFiles/actuate_basic.dir/flags.make
 CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o: CMakeFiles/actuate_basic.dir/flags.make
 CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o: ../actuate_basic.cpp
 CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o: CMakeFiles/actuate_basic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o -MF CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o.d -o CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/actuate_basic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o -MF CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o.d -o CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o -c /home/dohyeon/6DOF_manipulator/actuate_basic.cpp
 
 CMakeFiles/actuate_basic.dir/actuate_basic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/actuate_basic.dir/actuate_basic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/actuate_basic.cpp > CMakeFiles/actuate_basic.dir/actuate_basic.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/actuate_basic.cpp > CMakeFiles/actuate_basic.dir/actuate_basic.cpp.i
 
 CMakeFiles/actuate_basic.dir/actuate_basic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/actuate_basic.dir/actuate_basic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/actuate_basic.cpp -o CMakeFiles/actuate_basic.dir/actuate_basic.cpp.s
-
-CMakeFiles/actuate_basic.dir/Robotics.cpp.o: CMakeFiles/actuate_basic.dir/flags.make
-CMakeFiles/actuate_basic.dir/Robotics.cpp.o: ../Robotics.cpp
-CMakeFiles/actuate_basic.dir/Robotics.cpp.o: CMakeFiles/actuate_basic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/actuate_basic.dir/Robotics.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/actuate_basic.dir/Robotics.cpp.o -MF CMakeFiles/actuate_basic.dir/Robotics.cpp.o.d -o CMakeFiles/actuate_basic.dir/Robotics.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/Robotics.cpp
-
-CMakeFiles/actuate_basic.dir/Robotics.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/actuate_basic.dir/Robotics.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/Robotics.cpp > CMakeFiles/actuate_basic.dir/Robotics.cpp.i
-
-CMakeFiles/actuate_basic.dir/Robotics.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/actuate_basic.dir/Robotics.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/Robotics.cpp -o CMakeFiles/actuate_basic.dir/Robotics.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/actuate_basic.cpp -o CMakeFiles/actuate_basic.dir/actuate_basic.cpp.s
 
 # Object files for target actuate_basic
 actuate_basic_OBJECTS = \
-"CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o" \
-"CMakeFiles/actuate_basic.dir/Robotics.cpp.o"
+"CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o"
 
 # External object files for target actuate_basic
 actuate_basic_EXTERNAL_OBJECTS =
 
 actuate_basic: CMakeFiles/actuate_basic.dir/actuate_basic.cpp.o
-actuate_basic: CMakeFiles/actuate_basic.dir/Robotics.cpp.o
 actuate_basic: CMakeFiles/actuate_basic.dir/build.make
 actuate_basic: motorlib/libmotorlib.a
 actuate_basic: CMakeFiles/actuate_basic.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable actuate_basic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable actuate_basic"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/actuate_basic.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -122,6 +106,6 @@ CMakeFiles/actuate_basic.dir/clean:
 .PHONY : CMakeFiles/actuate_basic.dir/clean
 
 CMakeFiles/actuate_basic.dir/depend:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dohyeon/2023_UGRP_actuating_code /home/dohyeon/2023_UGRP_actuating_code /home/dohyeon/2023_UGRP_actuating_code/build /home/dohyeon/2023_UGRP_actuating_code/build /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles/actuate_basic.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dohyeon/6DOF_manipulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dohyeon/6DOF_manipulator /home/dohyeon/6DOF_manipulator /home/dohyeon/6DOF_manipulator/build /home/dohyeon/6DOF_manipulator/build /home/dohyeon/6DOF_manipulator/build/CMakeFiles/actuate_basic.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/actuate_basic.dir/depend
 

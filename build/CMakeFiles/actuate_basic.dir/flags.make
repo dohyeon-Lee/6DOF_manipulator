@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dohyeon/2023_UGRP_actuating_code/motorlib/include
+CXX_INCLUDES = -I/home/dohyeon/6DOF_manipulator/motorlib/include
 
 CXX_FLAGS = 
 

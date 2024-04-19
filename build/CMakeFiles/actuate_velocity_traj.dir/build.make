@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dohyeon/2023_UGRP_actuating_code
+CMAKE_SOURCE_DIR = /home/dohyeon/6DOF_manipulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dohyeon/2023_UGRP_actuating_code/build
+CMAKE_BINARY_DIR = /home/dohyeon/6DOF_manipulator/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/actuate_velocity_traj.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/actuate_velocity_traj.dir/flags.make
 CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.o: CMakeFiles/actuate_velocity_traj.dir/flags.make
 CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.o: ../position_velocity.cpp
 CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.o: CMakeFiles/actuate_velocity_traj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.o -MF CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.o.d -o CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/position_velocity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.o -MF CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.o.d -o CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.o -c /home/dohyeon/6DOF_manipulator/position_velocity.cpp
 
 CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/position_velocity.cpp > CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/position_velocity.cpp > CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.i
 
 CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/position_velocity.cpp -o CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/position_velocity.cpp -o CMakeFiles/actuate_velocity_traj.dir/position_velocity.cpp.s
 
 CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o: CMakeFiles/actuate_velocity_traj.dir/flags.make
 CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o: ../Robotics.cpp
 CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o: CMakeFiles/actuate_velocity_traj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o -MF CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o.d -o CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/Robotics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o -MF CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o.d -o CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o -c /home/dohyeon/6DOF_manipulator/Robotics.cpp
 
 CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/Robotics.cpp > CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/Robotics.cpp > CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.i
 
 CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/Robotics.cpp -o CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/Robotics.cpp -o CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.s
 
 # Object files for target actuate_velocity_traj
 actuate_velocity_traj_OBJECTS = \
@@ -110,7 +110,7 @@ actuate_velocity_traj: CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o
 actuate_velocity_traj: CMakeFiles/actuate_velocity_traj.dir/build.make
 actuate_velocity_traj: motorlib/libmotorlib.a
 actuate_velocity_traj: CMakeFiles/actuate_velocity_traj.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable actuate_velocity_traj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable actuate_velocity_traj"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/actuate_velocity_traj.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -122,6 +122,6 @@ CMakeFiles/actuate_velocity_traj.dir/clean:
 .PHONY : CMakeFiles/actuate_velocity_traj.dir/clean
 
 CMakeFiles/actuate_velocity_traj.dir/depend:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dohyeon/2023_UGRP_actuating_code /home/dohyeon/2023_UGRP_actuating_code /home/dohyeon/2023_UGRP_actuating_code/build /home/dohyeon/2023_UGRP_actuating_code/build /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles/actuate_velocity_traj.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dohyeon/6DOF_manipulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dohyeon/6DOF_manipulator /home/dohyeon/6DOF_manipulator /home/dohyeon/6DOF_manipulator/build /home/dohyeon/6DOF_manipulator/build /home/dohyeon/6DOF_manipulator/build/CMakeFiles/actuate_velocity_traj.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/actuate_velocity_traj.dir/depend
 

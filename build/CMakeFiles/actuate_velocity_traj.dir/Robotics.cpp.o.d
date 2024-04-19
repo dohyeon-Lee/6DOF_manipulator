@@ -1,8 +1,6 @@
 CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o: \
- /home/dohyeon/2023_UGRP_actuating_code/Robotics.cpp \
- /usr/include/stdc-predef.h \
- /home/dohyeon/2023_UGRP_actuating_code/Robotics.h \
- /usr/include/c++/11/cmath \
+ /home/dohyeon/6DOF_manipulator/Robotics.cpp /usr/include/stdc-predef.h \
+ /home/dohyeon/6DOF_manipulator/Robotics.h /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

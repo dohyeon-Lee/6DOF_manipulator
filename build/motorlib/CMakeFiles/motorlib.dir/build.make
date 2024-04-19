@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dohyeon/2023_UGRP_actuating_code
+CMAKE_SOURCE_DIR = /home/dohyeon/6DOF_manipulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dohyeon/2023_UGRP_actuating_code/build
+CMAKE_BINARY_DIR = /home/dohyeon/6DOF_manipulator/build
 
 # Include any dependencies generated for this target.
 include motorlib/CMakeFiles/motorlib.dir/depend.make
@@ -72,198 +72,198 @@ include motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.o: motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.o: ../motorlib/src/group_handler.cpp
 motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.o: motorlib/CMakeFiles/motorlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.o"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.o -MF CMakeFiles/motorlib.dir/src/group_handler.cpp.o.d -o CMakeFiles/motorlib.dir/src/group_handler.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.o"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.o -MF CMakeFiles/motorlib.dir/src/group_handler.cpp.o.d -o CMakeFiles/motorlib.dir/src/group_handler.cpp.o -c /home/dohyeon/6DOF_manipulator/motorlib/src/group_handler.cpp
 
 motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorlib.dir/src/group_handler.cpp.i"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_handler.cpp > CMakeFiles/motorlib.dir/src/group_handler.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/motorlib/src/group_handler.cpp > CMakeFiles/motorlib.dir/src/group_handler.cpp.i
 
 motorlib/CMakeFiles/motorlib.dir/src/group_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorlib.dir/src/group_handler.cpp.s"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_handler.cpp -o CMakeFiles/motorlib.dir/src/group_handler.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/motorlib/src/group_handler.cpp -o CMakeFiles/motorlib.dir/src/group_handler.cpp.s
 
 motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o: motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o: ../motorlib/src/group_bulk_read.cpp
 motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o: motorlib/CMakeFiles/motorlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o -MF CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o.d -o CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_bulk_read.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o -MF CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o.d -o CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o -c /home/dohyeon/6DOF_manipulator/motorlib/src/group_bulk_read.cpp
 
 motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.i"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_bulk_read.cpp > CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/motorlib/src/group_bulk_read.cpp > CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.i
 
 motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.s"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_bulk_read.cpp -o CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/motorlib/src/group_bulk_read.cpp -o CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.s
 
 motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.o: motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.o: ../motorlib/src/group_bulk_write.cpp
 motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.o: motorlib/CMakeFiles/motorlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.o"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.o -MF CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.o.d -o CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_bulk_write.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.o"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.o -MF CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.o.d -o CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.o -c /home/dohyeon/6DOF_manipulator/motorlib/src/group_bulk_write.cpp
 
 motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.i"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_bulk_write.cpp > CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/motorlib/src/group_bulk_write.cpp > CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.i
 
 motorlib/CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.s"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_bulk_write.cpp -o CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/motorlib/src/group_bulk_write.cpp -o CMakeFiles/motorlib.dir/src/group_bulk_write.cpp.s
 
 motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.o: motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.o: ../motorlib/src/group_sync_read.cpp
 motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.o: motorlib/CMakeFiles/motorlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.o"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.o -MF CMakeFiles/motorlib.dir/src/group_sync_read.cpp.o.d -o CMakeFiles/motorlib.dir/src/group_sync_read.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_sync_read.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.o"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.o -MF CMakeFiles/motorlib.dir/src/group_sync_read.cpp.o.d -o CMakeFiles/motorlib.dir/src/group_sync_read.cpp.o -c /home/dohyeon/6DOF_manipulator/motorlib/src/group_sync_read.cpp
 
 motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorlib.dir/src/group_sync_read.cpp.i"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_sync_read.cpp > CMakeFiles/motorlib.dir/src/group_sync_read.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/motorlib/src/group_sync_read.cpp > CMakeFiles/motorlib.dir/src/group_sync_read.cpp.i
 
 motorlib/CMakeFiles/motorlib.dir/src/group_sync_read.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorlib.dir/src/group_sync_read.cpp.s"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_sync_read.cpp -o CMakeFiles/motorlib.dir/src/group_sync_read.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/motorlib/src/group_sync_read.cpp -o CMakeFiles/motorlib.dir/src/group_sync_read.cpp.s
 
 motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.o: motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.o: ../motorlib/src/group_sync_write.cpp
 motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.o: motorlib/CMakeFiles/motorlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.o"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.o -MF CMakeFiles/motorlib.dir/src/group_sync_write.cpp.o.d -o CMakeFiles/motorlib.dir/src/group_sync_write.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_sync_write.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.o"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.o -MF CMakeFiles/motorlib.dir/src/group_sync_write.cpp.o.d -o CMakeFiles/motorlib.dir/src/group_sync_write.cpp.o -c /home/dohyeon/6DOF_manipulator/motorlib/src/group_sync_write.cpp
 
 motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorlib.dir/src/group_sync_write.cpp.i"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_sync_write.cpp > CMakeFiles/motorlib.dir/src/group_sync_write.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/motorlib/src/group_sync_write.cpp > CMakeFiles/motorlib.dir/src/group_sync_write.cpp.i
 
 motorlib/CMakeFiles/motorlib.dir/src/group_sync_write.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorlib.dir/src/group_sync_write.cpp.s"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_sync_write.cpp -o CMakeFiles/motorlib.dir/src/group_sync_write.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/motorlib/src/group_sync_write.cpp -o CMakeFiles/motorlib.dir/src/group_sync_write.cpp.s
 
 motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.o: motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.o: ../motorlib/src/packet_handler.cpp
 motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.o: motorlib/CMakeFiles/motorlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.o"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.o -MF CMakeFiles/motorlib.dir/src/packet_handler.cpp.o.d -o CMakeFiles/motorlib.dir/src/packet_handler.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/packet_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.o"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.o -MF CMakeFiles/motorlib.dir/src/packet_handler.cpp.o.d -o CMakeFiles/motorlib.dir/src/packet_handler.cpp.o -c /home/dohyeon/6DOF_manipulator/motorlib/src/packet_handler.cpp
 
 motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorlib.dir/src/packet_handler.cpp.i"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/packet_handler.cpp > CMakeFiles/motorlib.dir/src/packet_handler.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/motorlib/src/packet_handler.cpp > CMakeFiles/motorlib.dir/src/packet_handler.cpp.i
 
 motorlib/CMakeFiles/motorlib.dir/src/packet_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorlib.dir/src/packet_handler.cpp.s"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/packet_handler.cpp -o CMakeFiles/motorlib.dir/src/packet_handler.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/motorlib/src/packet_handler.cpp -o CMakeFiles/motorlib.dir/src/packet_handler.cpp.s
 
 motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.o: motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.o: ../motorlib/src/port_handler.cpp
 motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.o: motorlib/CMakeFiles/motorlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.o"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.o -MF CMakeFiles/motorlib.dir/src/port_handler.cpp.o.d -o CMakeFiles/motorlib.dir/src/port_handler.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/port_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.o"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.o -MF CMakeFiles/motorlib.dir/src/port_handler.cpp.o.d -o CMakeFiles/motorlib.dir/src/port_handler.cpp.o -c /home/dohyeon/6DOF_manipulator/motorlib/src/port_handler.cpp
 
 motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorlib.dir/src/port_handler.cpp.i"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/port_handler.cpp > CMakeFiles/motorlib.dir/src/port_handler.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/motorlib/src/port_handler.cpp > CMakeFiles/motorlib.dir/src/port_handler.cpp.i
 
 motorlib/CMakeFiles/motorlib.dir/src/port_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorlib.dir/src/port_handler.cpp.s"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/port_handler.cpp -o CMakeFiles/motorlib.dir/src/port_handler.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/motorlib/src/port_handler.cpp -o CMakeFiles/motorlib.dir/src/port_handler.cpp.s
 
 motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.o: motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.o: ../motorlib/src/protocol1_packet_handler.cpp
 motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.o: motorlib/CMakeFiles/motorlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.o"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.o -MF CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.o.d -o CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/protocol1_packet_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.o"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.o -MF CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.o.d -o CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.o -c /home/dohyeon/6DOF_manipulator/motorlib/src/protocol1_packet_handler.cpp
 
 motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.i"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/protocol1_packet_handler.cpp > CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/motorlib/src/protocol1_packet_handler.cpp > CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.i
 
 motorlib/CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.s"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/protocol1_packet_handler.cpp -o CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/motorlib/src/protocol1_packet_handler.cpp -o CMakeFiles/motorlib.dir/src/protocol1_packet_handler.cpp.s
 
 motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.o: motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.o: ../motorlib/src/protocol2_packet_handler.cpp
 motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.o: motorlib/CMakeFiles/motorlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.o"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.o -MF CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.o.d -o CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/protocol2_packet_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.o"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.o -MF CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.o.d -o CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.o -c /home/dohyeon/6DOF_manipulator/motorlib/src/protocol2_packet_handler.cpp
 
 motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.i"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/protocol2_packet_handler.cpp > CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/motorlib/src/protocol2_packet_handler.cpp > CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.i
 
 motorlib/CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.s"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/protocol2_packet_handler.cpp -o CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/motorlib/src/protocol2_packet_handler.cpp -o CMakeFiles/motorlib.dir/src/protocol2_packet_handler.cpp.s
 
 motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.o: motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.o: ../motorlib/src/port_handler_linux.cpp
 motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.o: motorlib/CMakeFiles/motorlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.o"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.o -MF CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.o.d -o CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/port_handler_linux.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.o"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.o -MF CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.o.d -o CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.o -c /home/dohyeon/6DOF_manipulator/motorlib/src/port_handler_linux.cpp
 
 motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.i"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/port_handler_linux.cpp > CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/motorlib/src/port_handler_linux.cpp > CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.i
 
 motorlib/CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.s"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/port_handler_linux.cpp -o CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/motorlib/src/port_handler_linux.cpp -o CMakeFiles/motorlib.dir/src/port_handler_linux.cpp.s
 
 motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.o: motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.o: ../motorlib/src/Motor.cpp
 motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.o: motorlib/CMakeFiles/motorlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.o"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.o -MF CMakeFiles/motorlib.dir/src/Motor.cpp.o.d -o CMakeFiles/motorlib.dir/src/Motor.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/Motor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.o"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.o -MF CMakeFiles/motorlib.dir/src/Motor.cpp.o.d -o CMakeFiles/motorlib.dir/src/Motor.cpp.o -c /home/dohyeon/6DOF_manipulator/motorlib/src/Motor.cpp
 
 motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorlib.dir/src/Motor.cpp.i"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/Motor.cpp > CMakeFiles/motorlib.dir/src/Motor.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/motorlib/src/Motor.cpp > CMakeFiles/motorlib.dir/src/Motor.cpp.i
 
 motorlib/CMakeFiles/motorlib.dir/src/Motor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorlib.dir/src/Motor.cpp.s"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/Motor.cpp -o CMakeFiles/motorlib.dir/src/Motor.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/motorlib/src/Motor.cpp -o CMakeFiles/motorlib.dir/src/Motor.cpp.s
 
 motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.o: motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.o: ../motorlib/src/Motor_control.cpp
 motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.o: motorlib/CMakeFiles/motorlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.o"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.o -MF CMakeFiles/motorlib.dir/src/Motor_control.cpp.o.d -o CMakeFiles/motorlib.dir/src/Motor_control.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/Motor_control.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.o"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.o -MF CMakeFiles/motorlib.dir/src/Motor_control.cpp.o.d -o CMakeFiles/motorlib.dir/src/Motor_control.cpp.o -c /home/dohyeon/6DOF_manipulator/motorlib/src/Motor_control.cpp
 
 motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorlib.dir/src/Motor_control.cpp.i"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/Motor_control.cpp > CMakeFiles/motorlib.dir/src/Motor_control.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/motorlib/src/Motor_control.cpp > CMakeFiles/motorlib.dir/src/Motor_control.cpp.i
 
 motorlib/CMakeFiles/motorlib.dir/src/Motor_control.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorlib.dir/src/Motor_control.cpp.s"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/Motor_control.cpp -o CMakeFiles/motorlib.dir/src/Motor_control.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/motorlib/src/Motor_control.cpp -o CMakeFiles/motorlib.dir/src/Motor_control.cpp.s
 
 motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.o: motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.o: ../motorlib/src/group_fast_sync_read.cpp
 motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.o: motorlib/CMakeFiles/motorlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.o"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.o -MF CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.o.d -o CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_fast_sync_read.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.o"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.o -MF CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.o.d -o CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.o -c /home/dohyeon/6DOF_manipulator/motorlib/src/group_fast_sync_read.cpp
 
 motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.i"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_fast_sync_read.cpp > CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/motorlib/src/group_fast_sync_read.cpp > CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.i
 
 motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.s"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_fast_sync_read.cpp -o CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/motorlib/src/group_fast_sync_read.cpp -o CMakeFiles/motorlib.dir/src/group_fast_sync_read.cpp.s
 
 motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.o: motorlib/CMakeFiles/motorlib.dir/flags.make
 motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.o: ../motorlib/src/group_fast_bulk_read.cpp
 motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.o: motorlib/CMakeFiles/motorlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.o"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.o -MF CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.o.d -o CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.o -c /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_fast_bulk_read.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.o"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.o -MF CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.o.d -o CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.o -c /home/dohyeon/6DOF_manipulator/motorlib/src/group_fast_bulk_read.cpp
 
 motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.i"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_fast_bulk_read.cpp > CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.i
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dohyeon/6DOF_manipulator/motorlib/src/group_fast_bulk_read.cpp > CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.i
 
 motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.s"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_fast_bulk_read.cpp -o CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.s
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dohyeon/6DOF_manipulator/motorlib/src/group_fast_bulk_read.cpp -o CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.s
 
 # Object files for target motorlib
 motorlib_OBJECTS = \
@@ -301,19 +301,19 @@ motorlib/libmotorlib.a: motorlib/CMakeFiles/motorlib.dir/src/group_fast_sync_rea
 motorlib/libmotorlib.a: motorlib/CMakeFiles/motorlib.dir/src/group_fast_bulk_read.cpp.o
 motorlib/libmotorlib.a: motorlib/CMakeFiles/motorlib.dir/build.make
 motorlib/libmotorlib.a: motorlib/CMakeFiles/motorlib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX static library libmotorlib.a"
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && $(CMAKE_COMMAND) -P CMakeFiles/motorlib.dir/cmake_clean_target.cmake
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/motorlib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dohyeon/6DOF_manipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX static library libmotorlib.a"
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && $(CMAKE_COMMAND) -P CMakeFiles/motorlib.dir/cmake_clean_target.cmake
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/motorlib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 motorlib/CMakeFiles/motorlib.dir/build: motorlib/libmotorlib.a
 .PHONY : motorlib/CMakeFiles/motorlib.dir/build
 
 motorlib/CMakeFiles/motorlib.dir/clean:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build/motorlib && $(CMAKE_COMMAND) -P CMakeFiles/motorlib.dir/cmake_clean.cmake
+	cd /home/dohyeon/6DOF_manipulator/build/motorlib && $(CMAKE_COMMAND) -P CMakeFiles/motorlib.dir/cmake_clean.cmake
 .PHONY : motorlib/CMakeFiles/motorlib.dir/clean
 
 motorlib/CMakeFiles/motorlib.dir/depend:
-	cd /home/dohyeon/2023_UGRP_actuating_code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dohyeon/2023_UGRP_actuating_code /home/dohyeon/2023_UGRP_actuating_code/motorlib /home/dohyeon/2023_UGRP_actuating_code/build /home/dohyeon/2023_UGRP_actuating_code/build/motorlib /home/dohyeon/2023_UGRP_actuating_code/build/motorlib/CMakeFiles/motorlib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dohyeon/6DOF_manipulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dohyeon/6DOF_manipulator /home/dohyeon/6DOF_manipulator/motorlib /home/dohyeon/6DOF_manipulator/build /home/dohyeon/6DOF_manipulator/build/motorlib /home/dohyeon/6DOF_manipulator/build/motorlib/CMakeFiles/motorlib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : motorlib/CMakeFiles/motorlib.dir/depend
 

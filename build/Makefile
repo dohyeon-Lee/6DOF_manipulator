@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dohyeon/2023_UGRP_actuating_code
+CMAKE_SOURCE_DIR = /home/dohyeon/6DOF_manipulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dohyeon/2023_UGRP_actuating_code/build
+CMAKE_BINARY_DIR = /home/dohyeon/6DOF_manipulator/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles /home/dohyeon/2023_UGRP_actuating_code/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/6DOF_manipulator/build/CMakeFiles /home/dohyeon/6DOF_manipulator/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/2023_UGRP_actuating_code/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dohyeon/6DOF_manipulator/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -174,7 +174,6 @@ Robotics.o: Robotics.cpp.o
 # target to build an object file
 Robotics.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_velocity_traj.dir/build.make CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_basic.dir/build.make CMakeFiles/actuate_basic.dir/Robotics.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_robotics.dir/build.make CMakeFiles/actuate_robotics.dir/Robotics.cpp.o
 .PHONY : Robotics.cpp.o
 
@@ -184,7 +183,6 @@ Robotics.i: Robotics.cpp.i
 # target to preprocess a source file
 Robotics.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_velocity_traj.dir/build.make CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_basic.dir/build.make CMakeFiles/actuate_basic.dir/Robotics.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_robotics.dir/build.make CMakeFiles/actuate_robotics.dir/Robotics.cpp.i
 .PHONY : Robotics.cpp.i
 
@@ -194,7 +192,6 @@ Robotics.s: Robotics.cpp.s
 # target to generate assembly for a file
 Robotics.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_velocity_traj.dir/build.make CMakeFiles/actuate_velocity_traj.dir/Robotics.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_basic.dir/build.make CMakeFiles/actuate_basic.dir/Robotics.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuate_robotics.dir/build.make CMakeFiles/actuate_robotics.dir/Robotics.cpp.s
 .PHONY : Robotics.cpp.s
 

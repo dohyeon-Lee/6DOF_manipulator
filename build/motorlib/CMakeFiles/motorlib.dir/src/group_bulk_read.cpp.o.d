@@ -1,5 +1,5 @@
 motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o: \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/src/group_bulk_read.cpp \
+ /home/dohyeon/6DOF_manipulator/motorlib/src/group_bulk_read.cpp \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -107,13 +107,13 @@ motorlib/CMakeFiles/motorlib.dir/src/group_bulk_read.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_bulk_read.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/port_handler.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/group_bulk_read.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/port_handler.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/packet_handler.h \
- /home/dohyeon/2023_UGRP_actuating_code/motorlib/include/group_handler.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/packet_handler.h \
+ /home/dohyeon/6DOF_manipulator/motorlib/include/group_handler.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h
